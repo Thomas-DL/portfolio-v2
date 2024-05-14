@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Str;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ProjectController;
+use SebastianBergmann\CodeCoverage\Report\Xml\Project;
 
 // APP ROUTES
 

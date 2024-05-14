@@ -2,21 +2,29 @@
 
 namespace App\Providers\Filament;
 
-use Filament\Http\Middleware\Authenticate;
-use Filament\Http\Middleware\DisableBladeIconComponents;
-use Filament\Http\Middleware\DispatchServingFilamentEvent;
 use Filament\Pages;
 use Filament\Panel;
-use Filament\PanelProvider;
-use Filament\Support\Colors\Color;
 use Filament\Widgets;
-use Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse;
-use Illuminate\Cookie\Middleware\EncryptCookies;
-use Illuminate\Foundation\Http\Middleware\VerifyCsrfToken;
-use Illuminate\Routing\Middleware\SubstituteBindings;
-use Illuminate\Session\Middleware\AuthenticateSession;
+use Filament\PanelProvider;
+use Filament\Pages\Dashboard;
+use Nody\NodyBlog\NodyBlogPlugin;
+use Filament\Support\Colors\Color;
+use Filament\Navigation\NavigationItem;
+use Filament\Http\Middleware\Authenticate;
+use Filament\Navigation\NavigationBuilder;
 use Illuminate\Session\Middleware\StartSession;
+use Illuminate\Cookie\Middleware\EncryptCookies;
+use Nody\NodyBlog\Filament\Resources\TagResource;
+use Nody\NodyBlog\Filament\Resources\PostResource;
+use Illuminate\Routing\Middleware\SubstituteBindings;
+use Nody\NodyBlog\Filament\Resources\CommentResource;
+use Illuminate\Session\Middleware\AuthenticateSession;
 use Illuminate\View\Middleware\ShareErrorsFromSession;
+use Nody\NodyBlog\Filament\Resources\CategoryResource;
+use Filament\Http\Middleware\DisableBladeIconComponents;
+use Filament\Http\Middleware\DispatchServingFilamentEvent;
+use Illuminate\Foundation\Http\Middleware\VerifyCsrfToken;
+use Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse;
 
 class AdminPanelProvider extends PanelProvider
 {
@@ -41,6 +49,7 @@ class AdminPanelProvider extends PanelProvider
                 Widgets\AccountWidget::class,
                 Widgets\FilamentInfoWidget::class,
             ])
+            ->plugin(new NodyBlogPlugin())
             ->middleware([
                 EncryptCookies::class,
                 AddQueuedCookiesToResponse::class,
@@ -54,6 +63,26 @@ class AdminPanelProvider extends PanelProvider
             ])
             ->authMiddleware([
                 Authenticate::class,
-            ]);
+            ])
+            ->navigation(function (NavigationBuilder $builder): NavigationBuilder {
+                $builder->items([
+                    NavigationItem::make('Dashboard')
+                        ->icon('heroicon-o-home')
+                        ->isActiveWhen(fn (): bool => request()->routeIs('filament.pages.dashboard'))
+                        ->url(fn (): string => Dashboard::getUrl()),
+                    NavigationItem::make('Site')
+                        ->icon('heroicon-o-globe-alt')
+                        ->isActiveWhen(fn (): bool => request()->routeIs('home'))
+                        ->url(fn (): string => '/'),
+                ]);
+                $builder->group('Blog', [
+                    ...CategoryResource::getNavigationItems(),
+                    ...PostResource::getNavigationItems(),
+                    ...TagResource::getNavigationItems(),
+                    ...CommentResource::getNavigationItems(),
+                ]);
+
+                return $builder;
+            });
     }
 }

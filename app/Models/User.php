@@ -3,8 +3,10 @@
 namespace App\Models;
 
 // use Illuminate\Contracts\Auth\MustVerifyEmail;
+use Nody\NodyBlog\Models\Post;
 use Spatie\Permission\Traits\HasRoles;
 use Illuminate\Notifications\Notifiable;
+use Nody\NodyBlog\Livewire\PostComments;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
@@ -45,5 +47,34 @@ class User extends Authenticatable
             'email_verified_at' => 'datetime',
             'password' => 'hashed',
         ];
+    }
+
+    public function getProfileAvatar(): string
+    {
+        if ($this->profile_photo_path) {
+            return $this->profile_photo_path;
+        } else {
+            return 'https://ui-avatars.com/api/?name=' . $this->name . '&color=7F9CF5&background=EBF4FF';
+        }
+    }
+
+    public function posts()
+    {
+        return $this->hasMany(Post::class);
+    }
+
+    public function likes()
+    {
+        return $this->belongsToMany(Post::class, 'post_like')->withTimestamps();
+    }
+
+    public function hasLiked(Post $post)
+    {
+        return $this->likes()->where('post_id', $post->id)->exists();
+    }
+
+    public function comments()
+    {
+        return $this->hasMany(PostComments::class);
     }
 }
