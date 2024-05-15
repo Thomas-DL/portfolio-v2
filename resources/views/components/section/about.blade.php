@@ -5,10 +5,10 @@
             <div class="px-6 lg:px-0">
                 <div class="mx-auto max-w-2xl">
                     <div class="max-w-lg">
-                        <h1 class="text-4xl font-bold tracking-tight text-gray-100 sm:text-6xl">Création de sites <span
+                        <h2 class="text-4xl font-bold tracking-tight text-gray-100 sm:text-6xl">Création de sites <span
                                 class="bg-gradient-to-r from-[#FF007A] to-[#FF7A00] text-transparent bg-clip-text">
                                 inoubliables
-                            </span></h1>
+                            </span></h2>
                         <p class="mt-6 text-lg leading-8 text-gray-300">
                             Je me concentre exclusivement sur une chose, et je m'y dédie avec une précision inégalée. Si
                             vous recherchez un site web uniquement pour son esthétisme, avec des animations
