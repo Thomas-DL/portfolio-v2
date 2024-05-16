@@ -15,7 +15,8 @@
         "livewire/volt": "^1.0",
         "nody/nody-blog": "^1.0",
         "owenvoke/blade-fontawesome": "^2.6",
-        "spatie/laravel-permission": "^6.7"
+        "spatie/laravel-permission": "^6.7",
+        "theseer/tokenizer": "^1.2"
     },
     "require-dev": {
         "fakerphp/faker": "^1.23",
