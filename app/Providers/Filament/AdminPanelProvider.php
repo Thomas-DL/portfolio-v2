@@ -9,9 +9,11 @@ use Filament\PanelProvider;
 use Filament\Pages\Dashboard;
 use Nody\NodyBlog\NodyBlogPlugin;
 use Filament\Support\Colors\Color;
+use App\Filament\Widgets\AuditStats;
 use Filament\Navigation\NavigationItem;
 use Filament\Http\Middleware\Authenticate;
 use Filament\Navigation\NavigationBuilder;
+use Filament\View\LegacyComponents\Widget;
 use Illuminate\Session\Middleware\StartSession;
 use Illuminate\Cookie\Middleware\EncryptCookies;
 use Nody\NodyBlog\Filament\Resources\TagResource;
@@ -37,7 +39,7 @@ class AdminPanelProvider extends PanelProvider
             ->login()
             ->profile()
             ->colors([
-                'primary' => Color::Amber,
+                'primary' => Color::Indigo,
             ])
             ->discoverResources(in: app_path('Filament/Resources'), for: 'App\\Filament\\Resources')
             ->discoverPages(in: app_path('Filament/Pages'), for: 'App\\Filament\\Pages')
@@ -47,7 +49,7 @@ class AdminPanelProvider extends PanelProvider
             ->discoverWidgets(in: app_path('Filament/Widgets'), for: 'App\\Filament\\Widgets')
             ->widgets([
                 Widgets\AccountWidget::class,
-                Widgets\FilamentInfoWidget::class,
+                AuditStats::class,
             ])
             ->plugin(new NodyBlogPlugin())
             ->middleware([
