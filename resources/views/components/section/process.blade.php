@@ -1,4 +1,5 @@
-<section class="relative isolate overflow-hidden bg-gray-950 px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0">
+<section id="processus"
+    class="relative isolate overflow-hidden bg-gray-950 px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0">
     <div class="absolute inset-0 -z-10 overflow-hidden">
         <svg class="absolute inset-0 -z-10 h-full w-full stroke-white/10 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
             aria-hidden="true">
