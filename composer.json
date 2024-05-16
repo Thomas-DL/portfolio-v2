@@ -63,6 +63,8 @@
         }
     },
     "config": {
+        "process-timeout": 600,
+        "github-protocols": ["https"],
         "optimize-autoloader": true,
         "preferred-install": "dist",
         "sort-packages": true,
