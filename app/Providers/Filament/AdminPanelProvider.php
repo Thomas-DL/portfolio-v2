@@ -80,6 +80,10 @@ class AdminPanelProvider extends PanelProvider
                         ->icon('heroicon-o-megaphone')
                         ->isActiveWhen(fn (): bool => request()->routeIs('filament.admin.resources.audits.index'))
                         ->url(fn (): string => route('filament.admin.resources.audits.index')),
+                    NavigationItem::make('Projets')
+                        ->icon('heroicon-o-briefcase')
+                        ->isActiveWhen(fn (): bool => request()->routeIs('filament.admin.resources.projects.index'))
+                        ->url(fn (): string => route('filament.admin.resources.projects.index')),
                 ]);
                 $builder->group('Blog', [
                     ...CategoryResource::getNavigationItems(),
