@@ -22,13 +22,16 @@
             class="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
             <div class="lg:pr-4">
                 <div class="lg:max-w-lg">
-                    <p
+                    <p data-aos="fade-right" data-aos-delay="200"
                         class="inline text-base font-semibold leading-7 bg-gradient-to-r from-[#FF007A] to-[#FF7A00] text-transparent bg-clip-text">
-                        Mon process</p>
-                    <h2 class="mt-2 text-4xl font-bold tracking-tight text-gray-100 sm:text-6xl">
+                        Mon process
+                    </p>
+                    <h2 data-aos="fade-right" data-aos-delay="300"
+                        class="mt-2 text-4xl font-bold tracking-tight text-gray-100 sm:text-6xl">
                         Comment ça marche de collaborer <span class=" whitespace-nowrap">avec moi ?</span>
                     </h2>
-                    <p class="mt-6 text-xl leading-8 text-gray-300">J'ai un processus clair et précis pour que l'on
+                    <p data-aos="fade-in" data-aos-delay="400" class="mt-6 text-xl leading-8 text-gray-300">J'ai un
+                        processus clair et précis pour que l'on
                         collabore en toute confiance et de manière efficiente vers notre but commun : décuplez vos
                         ventes grâce à votre site web.</p>
                 </div>
@@ -163,7 +166,7 @@
             </nav>
 
         </div>
-        <div
+        <div data-aos="fade-right" data-aos-delay="400"
             class="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
             <div class="lg:pr-4">
                 <div class="max-w-xl text-base leading-7 text-gray-700 lg:max-w-lg">

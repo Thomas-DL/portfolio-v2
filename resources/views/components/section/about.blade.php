@@ -2,7 +2,7 @@
     <div class="relative isolate overflow-hidden bg-gradient-to-b from-gray-500/10">
         <div class="absolute inset-x-0 top-0 z-10 h-24 bg-gradient-to-b from-gray-950 sm:h-32"></div>
         <div class="mx-auto max-w-7xl pb-24 pt-10 sm:pb-32 lg:grid lg:grid-cols-2 lg:gap-x-8 lg:px-8 lg:py-20">
-            <div class="px-6 lg:px-0">
+            <div data-aos="fade-right" class="px-6 lg:px-0">
                 <div class="mx-auto max-w-2xl">
                     <div class="max-w-lg">
                         <h2 class="text-4xl font-bold tracking-tight text-gray-100 sm:text-6xl">Création de sites <span
@@ -35,7 +35,7 @@
             <div class="mt-20 sm:mt-24 md:mx-auto md:max-w-2xl lg:mx-0 lg:mt-0 lg:w-screen">
                 <div class="absolute inset-y-0 right-1/2 -z-10 -mr-10 w-[200%] skew-x-[-30deg] bg-gray-950 shadow-xl shadow-gray-200/10 ring-1 ring-gray-50/10 md:-mr-20 lg:-mr-36"
                     aria-hidden="true"></div>
-                <div class="shadow-lg md:rounded-3xl">
+                <div data-aos="fade-left" class="shadow-lg md:rounded-3xl">
                     <div
                         class="bg-gradient-to-r from-[#FF007A] to-[#FF7A00] [clip-path:inset(0)] md:[clip-path:inset(0_round_theme(borderRadius.3xl))]">
                         <div class="absolute -inset-y-px left-1/2 -z-10 ml-10 w-[200%] skew-x-[-30deg] bg-indigo-100 opacity-20 ring-1 ring-inset ring-white md:ml-20 lg:ml-36"

@@ -614,7 +614,7 @@
                     class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
 
                     @foreach ($this->posts() as $post)
-                        <article class="flex flex-col items-start">
+                        <article data-aos="fade-up" data-aos-delay="100" class="flex flex-col items-start">
                             <div class="relative w-full">
                                 <img src="{{ $post->getThumbnail() }}" width="1200" height="630"
                                     class="w-full rounded-lg" alt="">

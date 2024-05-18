@@ -14,7 +14,7 @@
         <rect width="100%" height="100%" stroke-width="0" fill="url(#983e3e4c-de6d-4c3f-8d64-b9761d1534cc)" />
     </svg>
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
-        <div class="mx-auto max-w-2xl text-center">
+        <div data-aos="fade-up" class="mx-auto max-w-2xl text-center">
             <h2 id="section-title" class="text-4xl font-bold tracking-tight text-gray-100 sm:text-6xl">
                 Mes réalisations
             </h2>
@@ -25,7 +25,7 @@
             <div
                 class="mx-auto mt-16 grid max-w-2xl auto-rows-fr grid-cols-1 gap-8 sm:mt-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
                 @foreach ($projects as $project)
-                    <article
+                    <article data-aos="zoom-in"
                         class="group relative isolate flex flex-col justify-end overflow-hidden rounded-2xl bg-gray-950 px-8 pb-8 pt-80 sm:pt-48 lg:pt-96 hover:scale-105 transition ease-in-out">
                         <img src="{{ $project->getThumbnail() }}" alt=""
                             class="absolute top-0 left-0 inset-0 -z-10 w-full object-top group-hover:-top-[500px] transition-all ease-in-out duration-[2500ms]">
@@ -54,7 +54,7 @@
                 @endforeach
             </div>
         @else
-            <p class="text-center text-white font-bold text-xl mt-16">ça arrive bientôt... 👀</p>
+            <p data-aos="fade-up" class="text-center text-white font-bold text-xl mt-16">ça arrive bientôt... 👀</p>
         @endif
     </div>
 </section>

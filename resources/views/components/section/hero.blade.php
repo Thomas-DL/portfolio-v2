@@ -22,23 +22,28 @@
     <div class="relative z-20 mx-auto px-6 pb-24 pt-10 sm:pb-32 flex justify-center lg:px-8 lg:py-20">
         <div class="mx-auto max-w-4xl text-center lg:mx-0 lg:pt-8">
             <div class="mt-24 sm:mt-32 lg:mt-16">
-                <a href="#"
-                    class="inline-flex flex-wrap justify-center space-y-6 min-[420px]:space-y-0 space-x-6">
-                    <span
-                        class="rounded-full bg-gradient-to-r from-primary to-secondary px-3 py-1 text-sm font-semibold leading-6 text-white">
-                        Nouveau !
-                    </span>
-                    <span class="inline-flex items-center space-x-2 text-sm font-medium leading-6 text-gray-300">
-                        <span>Comment créer un site web en 2024</span>
-                        <svg class="h-5 w-5 text-gray-500" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                            <path fill-rule="evenodd"
-                                d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z"
-                                clip-rule="evenodd" />
-                        </svg>
-                    </span>
-                </a>
+                @if (isset($post) && !empty($post[0]))
+                    <a data-aos="fade-up" href="{{ route('blog.show', [$post[0]->category->slug, $post[0]->slug]) }}"
+                        class="inline-flex flex-wrap justify-center space-y-6 min-[420px]:space-y-0 space-x-6">
+                        <span
+                            class="rounded-full bg-gradient-to-r from-primary to-secondary px-3 py-1 text-sm font-semibold leading-6 text-white">
+                            Nouveau !
+                        </span>
+                        <span class="inline-flex items-center space-x-2 text-sm font-medium leading-6 text-gray-200">
+                            <span>{{ $post[0]->title }}</span>
+                            <svg class="h-5 w-5 text-gray-200" viewBox="0 0 20 20" fill="currentColor"
+                                aria-hidden="true">
+                                <path fill-rule="evenodd"
+                                    d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </span>
+                    </a>
+                @endif
             </div>
-            <h1 class="mt-10 text-4xl font-bold tracking-tight text-white sm:text-6xl">Transformons ensemble
+            <h1 data-aos="fade-up" data-aos-delay="100"
+                class="mt-10 text-4xl font-bold tracking-tight text-white sm:text-6xl">Transformons
+                ensemble
                 <span class="bg-gradient-to-r from-primary to-secondary text-transparent bg-clip-text">
                     vos
                     idées
@@ -47,7 +52,9 @@
                 <span
                     class="bg-gradient-to-r from-primary to-secondary text-transparent bg-clip-text">remarquables</span>
             </h1>
-            <p class="mt-6 text-lg leading-8 text-gray-300">Je réalise pour vous des sites vitrines qui captent
+            <p data-aos="fade-up" data-aos-delay="200" class="mt-6 text-lg leading-8 text-gray-300">Je réalise pour vous
+                des sites vitrines
+                qui captent
                 l'attention et convertissent vos visiteurs en clients fidèles.
             </p>
 

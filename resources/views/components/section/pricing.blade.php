@@ -2,10 +2,12 @@
     <div class="relative flow-root bg-gray-950 pb-16 pt-24 sm:pt-32 lg:pb-0">
         <div class="mx-auto max-w-7xl mb-24 px-6 lg:px-8">
             <div class="relative z-10 text-center">
-                <h2 id="section-title" class="text-4xl font-bold tracking-tight text-gray-100 sm:text-6xl">
+                <h2 data-aos="fade-up" data-aos-delay="100" id="section-title"
+                    class="text-4xl font-bold tracking-tight text-gray-100 sm:text-6xl">
                     Faisons simple et efficace.
                 </h2>
-                <p class="mx-auto mt-4 max-w-2xl text-center text-lg leading-8 text-white/80">
+                <p data-aos="fade-up" data-aos-delay="200"
+                    class="mx-auto mt-4 max-w-2xl text-center text-lg leading-8 text-white/80">
                     Pas de surprises. Pas de frais caché. Des prix justes.
                 </p>
             </div>
@@ -25,7 +27,7 @@
                 <div class="hidden max-h-[90%] lg:absolute lg:inset-x-px lg:bottom-0 lg:top-4 lg:block lg:rounded-t-2xl lg:bg-gray-900/80 lg:ring-1 lg:ring-white/10"
                     aria-hidden="true">
                 </div>
-                <div
+                <div data-aos="fade-right" data-aos-delay="300"
                     class="relative rounded-2xl bg-gray-800/80 ring-1 ring-white/10 lg:bg-transparent lg:pb-14 lg:ring-0">
                     <div class="p-8 lg:pt-12 xl:p-10 xl:pt-14">
                         <h3 id="tier-starter" class="text-sm font-semibold leading-6 text-white">Starter</h3>
@@ -78,7 +80,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="relative rounded-2xl z-10 bg-white shadow-xl ring-1 ring-gray-900/10">
+                <div data-aos="fade-up" data-aos-delay="200"
+                    class="relative rounded-2xl z-10 bg-white shadow-xl ring-1 ring-gray-900/10">
                     <div class="p-8 lg:pt-12 xl:p-10 xl:pt-14">
                         <h3 id="tier-scale" class="text-sm font-semibold leading-6 text-gray-900">Scale</h3>
                         <div
@@ -157,7 +160,7 @@
                         </div>
                     </div>
                 </div>
-                <div
+                <div data-aos="fade-left" data-aos-delay="300"
                     class="relative rounded-2xl bg-gray-800/80 ring-1 ring-white/10 lg:bg-transparent lg:pb-14 lg:ring-0">
                     <div class="p-8 lg:pt-12 xl:p-10 xl:pt-14">
                         <h3 id="tier-growth" class="text-sm font-semibold leading-6 text-white">Growth</h3>

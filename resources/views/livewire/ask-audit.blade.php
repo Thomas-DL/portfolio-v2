@@ -1,4 +1,4 @@
-<div x-data="{ url: '' }">
+<div data-aos="fade-up" data-aos-delay="300" x-data="{ url: '' }">
     <div class="sm:inline-block mt-10 hidden  w-full p-[2px] bg-gradient-to-r from-[#FF007A] to-[#FF7A00] rounded-full">
         <div class="p-4 flex justify-between bg-gray-950 rounded-full">
             <input type="text" placeholder="https://url-de-votre-site.com" x-model="url"
