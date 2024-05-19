@@ -18,16 +18,16 @@
     ];
 @endphp
 <section class="bg-gray-950">
-    <div class="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8 lg:py-40">
+    <div class="mx-auto max-w-7xl px-6 py-16 sm:py-32 lg:px-8 lg:py-32">
         <div class="mx-auto max-w-4xl divide-y divide-white/10">
             <div class="mx-auto max-w-2xl text-center">
                 <h2 data-aos="fade-up" data-aos-delay="100" id="section-title"
                     class="text-4xl font-bold tracking-tight text-gray-100 sm:text-6xl">
                     FAQs
                 </h2>
-                <p data-aos="fade-up" data-aos-delay="200" class="mt-2 text-lg leading-8 text-gray-200">Des sites web qui
-                    donnent des résultats, et rien d'autre.
-                    Vous pourriez être le prochain !</p>
+                <p data-aos="fade-up" data-aos-delay="200" class="mt-2 text-lg leading-8 text-gray-200">
+                    Réponses aux questions les plus fréquemment posées.
+                </p>
             </div>
             @foreach ($faqs as $faq)
                 <dl data-aos="fade-right" data-aos-delay="300" class="mt-10 space-y-6 divide-y divide-white/10">

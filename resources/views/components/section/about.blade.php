@@ -6,7 +6,7 @@
                 <div class="mx-auto max-w-2xl">
                     <div class="max-w-lg">
                         <h2 class="text-4xl font-bold tracking-tight text-gray-100 sm:text-6xl">Création de sites <span
-                                class="bg-gradient-to-r from-[#FF007A] to-[#FF7A00] text-transparent bg-clip-text">
+                                class="bg-gradient-to-r from-primary to-secondary text-transparent bg-clip-text">
                                 inoubliables
                             </span></h2>
                         <p class="mt-6 text-lg leading-8 text-gray-300">
@@ -18,7 +18,7 @@
                         </p>
                         <div class="mt-10 flex items-center gap-x-6">
                             <a href="#"
-                                class="relative rounded-full bg-gradient-to-r from-[#FF007A] to-[#FF7A00] px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:scale-105 transition ease-in-out focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+                                class="relative rounded-full bg-gradient-to-r from-primary to-secondary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:scale-105 transition ease-in-out focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
                                 <span class="absolute -top-1 -right-1 flex h-4 w-4">
                                     <span
                                         class="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
@@ -37,7 +37,7 @@
                     aria-hidden="true"></div>
                 <div data-aos="fade-left" class="shadow-lg md:rounded-3xl">
                     <div
-                        class="bg-gradient-to-r from-[#FF007A] to-[#FF7A00] [clip-path:inset(0)] md:[clip-path:inset(0_round_theme(borderRadius.3xl))]">
+                        class="bg-gradient-to-r from-primary to-secondary [clip-path:inset(0)] md:[clip-path:inset(0_round_theme(borderRadius.3xl))]">
                         <div class="absolute -inset-y-px left-1/2 -z-10 ml-10 w-[200%] skew-x-[-30deg] bg-indigo-100 opacity-20 ring-1 ring-inset ring-white md:ml-20 lg:ml-36"
                             aria-hidden="true">
                         </div>
