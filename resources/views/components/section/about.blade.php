@@ -20,7 +20,7 @@
                         </p>
                         <div class="mt-10 flex items-center gap-x-6">
                             <a href="#"
-                                class="relative rounded-full bg-gradient-to-r from-primary to-secondary px-3.5 py-2.5 text-sm font-semibold text-black dark:text-white shadow-sm hover:scale-105 transition ease-in-out focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+                                class="relative rounded-full bg-gradient-to-r from-primary to-secondary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:scale-105 transition ease-in-out focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
                                 <span class="absolute -top-1 -right-1 flex h-4 w-4">
                                     <span
                                         class="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
@@ -28,7 +28,8 @@
                                         class="relative inline-flex rounded-full h-4 w-4 text-xs justify-center items-center bg-red-500">1</span>
                                 </span>
                                 PRENDRE RDV</a>
-                            <a href="#" class="text-sm font-semibold leading-6 text-gray-100">Voir mes projets
+                            <a href="#" class="text-sm font-semibold leading-6 dark:text-gray-100">Voir mes
+                                projets
                                 <span aria-hidden="true">→</span></a>
                         </div>
                     </div>

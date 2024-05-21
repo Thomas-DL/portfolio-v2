@@ -58,14 +58,15 @@
     <div class="lg:hidden" role="dialog" aria-modal="true" x-show="mobileMenu">
         <div class="fixed inset-0 z-10"></div>
         <div
-            class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-gray-950 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+            class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white dark:bg-gray-950 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
             <div class="flex items-center justify-between">
                 <a href="/" class="-m-1.5 p-1.5">
                     <span class="sr-only">{{ env('APP_NAME') }}</span>
                     <x-application-logo class="h-8 w-auto hidden dark:block" theme="light" />
                     <x-application-logo class="h-8 w-auto block dark:hidden" theme="dark" />
                 </a>
-                <button @click="mobileMenu = !mobileMenu" type="button" class="-m-2.5 rounded-md p-2.5 text-gray-200">
+                <button @click="mobileMenu = !mobileMenu" type="button"
+                    class="-m-2.5 rounded-md p-2.5 text-black dark:text-gray-200">
                     <span class="sr-only">Close menu</span>
                     <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
                         aria-hidden="true">
@@ -77,25 +78,25 @@
                 <div class="-my-6 divide-y divide-gray-500/10">
                     <div class="space-y-2 py-6">
                         <a href="#realisations"
-                            class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-950">Réalisation</a>
+                            class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-black dark:text-white hover:bg-gray-50 dark:hover:bg-gray-950">Réalisation</a>
                         <a href="#processus"
-                            class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-950">Processus</a>
+                            class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-black dark:text-white hover:bg-gray-50 dark:hover:bg-gray-950">Processus</a>
                         <a href="#services"
-                            class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-950">Services</a>
+                            class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-black dark:text-white hover:bg-gray-50 dark:hover:bg-gray-950">Services</a>
                         <a href="#avis"
-                            class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-950">Avis</a>
+                            class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-black dark:text-white hover:bg-gray-50 dark:hover:bg-gray-950">Avis</a>
                         <a href="{{ route('blog.index') }}"
-                            class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-950">Blog</a>
+                            class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-black dark:text-white hover:bg-gray-50 dark:hover:bg-gray-950">Blog</a>
                     </div>
                     <div class="py-6">
                         @auth
                             <a href="{{ route('dashboard') }}"
-                                class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-white hover:bg-gray-900">Mon
+                                class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-black dark:text-white hover:bg-gray-50 dark:hover:bg-gray-950">Mon
                                 compte
                             </a>
                         @else
                             <a href="{{ route('login') }}"
-                                class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-white hover:bg-gray-900">Connexion
+                                class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-black dark:text-white hover:bg-gray-50 dark:hover:bg-gray-950">Connexion
                             </a>
                         @endauth
                     </div>

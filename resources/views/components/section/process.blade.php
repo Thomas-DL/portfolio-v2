@@ -82,7 +82,7 @@
                                 <span class="flex h-9 items-center">
                                     <span
                                         class="relative z-10 flex h-8 w-8 items-center justify-center rounded-full bg-gradient-to-r from-primary to-secondary group-hover:bg-indigo-800">
-                                        <span class="text-black dark:text-white">{{ $step }}</span>
+                                        <span class="text-white">{{ $step }}</span>
                                     </span>
                                 </span>
                                 <span class="ml-4 flex min-w-0 flex-col">
