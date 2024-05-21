@@ -28,7 +28,8 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
-<body class="antialiased font-sans">
+<body x-data="{ darkMode: localStorage.getItem('darkMode') === 'true' }" :class="darkMode ? 'dark' : ''"
+    @dark-mode-updated.window="darkMode = $event.detail.darkMode" class="antialiased font-sans">
 
     @include('layouts.partials.header')
 

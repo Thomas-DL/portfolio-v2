@@ -19,7 +19,7 @@
     ];
 @endphp
 <x-app-layout :data="$meta">
-    <div class="relative px-6 py-32 lg:px-8 bg-white dark:bg-gray-900">
+    <div class="relative px-6 py-32 lg:px-8 bg-white dark:bg-gray-950">
         <div class="mx-auto max-w-3xl text-base leading-7 text-gray-700">
             <div class="mb-10 flex items-center justify-between gap-x-2 text-gray-900 dark:text-gray-100">
                 <div class="flex items-center gap-x-2 hover:text-indigo-600 transition">

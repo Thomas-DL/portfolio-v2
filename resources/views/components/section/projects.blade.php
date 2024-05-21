@@ -1,5 +1,5 @@
-<section id="realisations" class="relative bg-gray-950 py-24 sm:py-32">
-    <svg class="absolute inset-0 z-0 rotate-180 h-full w-full stroke-white/10 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
+<section id="realisations" class="relative bg-white dark:bg-gray-950 py-24 sm:py-32">
+    <svg class="absolute inset-0 z-0 rotate-180 h-full w-full stroke-black/10 dark:stroke-white/10 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
         aria-hidden="true">
         <defs>
             <pattern id="983e3e4c-de6d-4c3f-8d64-b9761d1534cc" width="200" height="200" x="50%" y="-1"
@@ -7,7 +7,7 @@
                 <path d="M.5 200V.5H200" fill="none" />
             </pattern>
         </defs>
-        <svg x="50%" y="-1" class="overflow-visible fill-gray-800/20">
+        <svg x="50%" y="-1" class="overflow-visible fill-gray-400/20 dark:fill-gray-800/20">
             <path d="M-200 0h201v201h-201Z M600 0h201v201h-201Z M-400 600h201v201h-201Z M200 800h201v201h-201Z"
                 stroke-width="0" />
         </svg>
@@ -15,10 +15,11 @@
     </svg>
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
         <div data-aos="fade-up" class="mx-auto max-w-2xl text-center">
-            <h2 id="section-title" class="text-4xl font-bold tracking-tight text-gray-100 sm:text-6xl">
+            <h2 id="section-title" class="text-4xl font-bold tracking-tight text-black dark:text-gray-100 sm:text-6xl">
                 Mes réalisations
             </h2>
-            <p class="mt-2 text-lg leading-8 text-gray-200">Des sites web qui donnent des résultats, et rien d'autre.
+            <p class="mt-2 text-lg leading-8 text-gray-800 dark:text-gray-200">Des sites web qui donnent des résultats,
+                et rien d'autre.
                 Vous pourriez être le prochain !</p>
         </div>
         @if (isset($projects) && count($projects) > 0)
@@ -29,7 +30,8 @@
                         class="group relative isolate flex flex-col justify-end overflow-hidden rounded-2xl bg-gray-950 px-8 pb-8 pt-80 sm:pt-48 lg:pt-96 hover:scale-105 transition ease-in-out">
                         <img src="{{ $project->getThumbnail() }}" alt=""
                             class="absolute top-0 left-0 inset-0 -z-10 w-full object-top group-hover:-top-[500px] transition-all ease-in-out duration-[2500ms]">
-                        <div class="absolute inset-0 -bottom-1 -z-10 bg-gradient-to-t from-gray-900 via-gray-900/40">
+                        <div
+                            class="absolute inset-0 -bottom-1 -z-10 bg-gradient-to-t from-gray-800/80 dark:from-gray-900 via-gray-900/40">
                         </div>
                         <div class="absolute inset-0 -z-10 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
                         <div
@@ -47,7 +49,7 @@
                             </a>
                         </h3>
                         <div
-                            class="flex flex-wrap items-center gap-y-1 overflow-hidden text-sm leading-6 text-gray-400">
+                            class="flex flex-wrap items-center gap-y-1 overflow-hidden text-sm leading-6 text-gray-200">
                             <p class="mr-8">{{ $project->type }}</p>
                         </div>
                     </article>

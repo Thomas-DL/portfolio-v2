@@ -15,14 +15,14 @@
     <x-section.faqs />
 
     {{-- Posts section --}}
-    <section class="bg-gray-950 pb-16 pt-12 sm:pt-16">
+    <section class="bg-white dark:bg-gray-950 pb-16 pt-12 sm:pt-16">
         <div class="container mx-auto">
             <div class="mx-auto max-w-2xl text-center">
                 <h2 data-aos="fade-up" data-aos-delay="100" id="section-title"
-                    class="text-4xl font-bold tracking-tight text-gray-100 sm:text-6xl">
+                    class="text-4xl font-bold tracking-tight text-black dark:text-gray-100 sm:text-6xl">
                     Blog
                 </h2>
-                <p data-aos="fade-up" data-aos-delay="200" class="mt-2 text-lg leading-8 text-gray-200">
+                <p data-aos="fade-up" data-aos-delay="200" class="mt-2 text-lg leading-8 text-black dark:text-gray-200">
                     Découvrez mes derniers articles.
                 </p>
             </div>

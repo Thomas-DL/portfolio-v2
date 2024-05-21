@@ -4,12 +4,19 @@
             <div class="flex lg:flex-1">
                 <a href="/" class="-m-1.5 p-1.5">
                     <span class="sr-only">{{ env('APP_NAME') }}</span>
-                    <x-application-logo class="h-8 w-auto" theme="light" />
+                    <x-application-logo class="h-8 w-auto hidden dark:block" theme="light" />
+                    <x-application-logo class="h-8 w-auto block dark:hidden" theme="dark" />
                 </a>
             </div>
-            <div class="flex lg:hidden">
+            <div class="flex space-x-4 lg:hidden">
+                <button
+                    class="p-1 rounded-lg bg-gray-100/50 dark:bg-gray-800/50 ring-1 ring-gray-200 dark:ring-gray-800"
+                    @click="darkMode = !darkMode; localStorage.setItem('darkMode', darkMode)">
+                    <x-heroicon-o-sun x-show="!darkMode" class="w-6 h-auto text-gray-900" />
+                    <x-heroicon-o-moon x-show="darkMode" class="w-6 h-auto text-gray-400" />
+                </button>
                 <button type="button" @click="mobileMenu = !mobileMenu"
-                    class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-50">
+                    class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-950 dark:text-gray-50">
                     <span class="sr-only">Open main menu</span>
                     <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
                         aria-hidden="true">
@@ -19,18 +26,29 @@
                 </button>
             </div>
             <div class="hidden lg:flex lg:gap-x-12">
-                <a href="#realisations" class="text-sm font-semibold leading-6 text-gray-50">Réalisations</a>
-                <a href="#processus" class="text-sm font-semibold leading-6 text-gray-50">Processus</a>
-                <a href="#services" class="text-sm font-semibold leading-6 text-gray-50">Services</a>
-                <a href="#avis" class="text-sm font-semibold leading-6 text-gray-50">Avis</a>
-                <a href="{{ route('blog.index') }}" class="text-sm font-semibold leading-6 text-gray-50">Blog</a>
+                <a href="#realisations"
+                    class="text-sm font-semibold leading-6 text-gray-950 dark:text-gray-50">Réalisations</a>
+                <a href="#processus"
+                    class="text-sm font-semibold leading-6 text-gray-950 dark:text-gray-50">Processus</a>
+                <a href="#services" class="text-sm font-semibold leading-6 text-gray-950 dark:text-gray-50">Services</a>
+                <a href="#avis" class="text-sm font-semibold leading-6 text-gray-950 dark:text-gray-50">Avis</a>
+                <a href="{{ route('blog.index') }}"
+                    class="text-sm font-semibold leading-6 text-gray-950 dark:text-gray-50">Blog</a>
             </div>
-            <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+            <div class="hidden lg:flex lg:flex-1 lg:justify-end lg:items-center lg:space-x-4">
+                <button
+                    class="p-1 rounded-lg bg-gray-100/50 dark:bg-gray-800/50 ring-1 ring-gray-200 dark:ring-gray-800"
+                    @click="darkMode = !darkMode; localStorage.setItem('darkMode', darkMode)">
+                    <x-heroicon-o-sun x-show="!darkMode" class="w-6 h-auto text-gray-900" />
+                    <x-heroicon-o-moon x-show="darkMode" class="w-6 h-auto text-gray-400" />
+                </button>
                 @auth
-                    <a href="{{ route('dashboard') }}" class="text-sm font-semibold leading-6 text-gray-50">Mon compte
+                    <a href="{{ route('dashboard') }}"
+                        class="text-sm font-semibold leading-6 text-gray-950 dark:text-gray-50">Mon compte
                     </a>
                 @else
-                    <a href="{{ route('login') }}" class="text-sm font-semibold leading-6 text-gray-50">Connexion
+                    <a href="{{ route('login') }}"
+                        class="text-sm font-semibold leading-6 text-gray-950 dark:text-gray-50">Connexion
                         <span aria-hidden="true">&rarr;</span>
                     </a>
                 @endauth
@@ -44,7 +62,8 @@
             <div class="flex items-center justify-between">
                 <a href="/" class="-m-1.5 p-1.5">
                     <span class="sr-only">{{ env('APP_NAME') }}</span>
-                    <x-application-logo class="h-8 w-auto" theme="light" />
+                    <x-application-logo class="h-8 w-auto hidden dark:block" theme="light" />
+                    <x-application-logo class="h-8 w-auto block dark:hidden" theme="dark" />
                 </a>
                 <button @click="mobileMenu = !mobileMenu" type="button" class="-m-2.5 rounded-md p-2.5 text-gray-200">
                     <span class="sr-only">Close menu</span>

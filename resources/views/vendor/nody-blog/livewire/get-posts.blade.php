@@ -7,23 +7,23 @@
                     <div class="relative w-full mt-2">
                         <input type="text" name="search" id="search"
                             placeholder="{{ __('nody-blog::blog.search_placeholder') }}" wire:model.live="search"
-                            class="block w-full rounded-md border-0 py-1.5 pr-14 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                            class="block w-full rounded-md border-0 py-1.5 pr-14 text-gray-950 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
                     </div>
                 </div>
             @endif
             @if ($this->showFilters && $this->showFilters === '1')
-                <div class="bg-white dark:bg-gray-900 mt-10" x-data="{ open: false }">
+                <div class="bg-white dark:bg-gray-950 mt-10" x-data="{ open: false }">
                     <div x-show="open" class="relative z-50 sm:hidden" role="dialog" aria-modal="true">
                         <div class="fixed inset-0 bg-black bg-opacity-25"></div>
 
                         <div class="fixed inset-0 z-40 flex">
                             <div
-                                class="relative ml-auto flex h-full w-full max-w-xs flex-col overflow-y-auto bg-white dark:bg-gray-900 py-4 pb-12 shadow-xl">
+                                class="relative ml-auto flex h-full w-full max-w-xs flex-col overflow-y-auto bg-white dark:bg-gray-950 py-4 pb-12 shadow-xl">
                                 <div class="flex items-center justify-between px-4 mb-4">
-                                    <h2 class="text-lg font-medium text-gray-900 dark:text-white">
+                                    <h2 class="text-lg font-medium text-gray-950 dark:text-white">
                                         {{ __('nody-blog::blog.filters') }}</h2>
                                     <button type="button" @click="open = false"
-                                        class="-mr-2 flex h-10 w-10 items-center justify-center rounded-md bg-white dark:bg-gray-800 p-2 text-gray-400">
+                                        class="-mr-2 flex h-10 w-10 items-center justify-center rounded-md bg-white dark:bg-gray-900 p-2 text-gray-400">
                                         <span class="sr-only">Close menu</span>
                                         <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                                             stroke="currentColor" aria-hidden="true">
@@ -34,15 +34,15 @@
                                 </div>
 
                                 <!-- Filters -->
-                                <div class="border-t border-gray-200 dark:border-gray-700 px-4 py-6"
+                                <div class="border-t border-gray-200 dark:border-gray-800 px-4 py-6"
                                     x-data="{ openCategories: false }">
                                     <h3 class="-mx-2 -my-3 flow-root">
                                         <!-- Expand/collapse section button -->
                                         <button type="button" @click="openCategories = !openCategories"
-                                            class="flex w-full items-center justify-between bg-white dark:bg-gray-900 px-2 py-3 text-sm text-gray-400 dark:text-white"
+                                            class="flex w-full items-center justify-between bg-white dark:bg-gray-950 px-2 py-3 text-sm text-gray-400 dark:text-white"
                                             aria-controls="filter-section-0" aria-expanded="false">
                                             <span
-                                                class="font-medium text-gray-900 dark:text-white">{{ __('nody-blog::blog.categories') }}</span>
+                                                class="font-medium text-gray-950 dark:text-white">{{ __('nody-blog::blog.categories') }}</span>
                                             <span class="ml-6 flex items-center">
                                                 <svg class="rotate-0 h-5 w-5 transform" viewBox="0 0 20 20"
                                                     fill="currentColor" aria-hidden="true">
@@ -72,15 +72,15 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="border-t border-gray-200 dark:border-gray-700 px-4 py-6"
+                                <div class="border-t border-gray-200 dark:border-gray-800 px-4 py-6"
                                     x-data="{ openTags: false }">
                                     <h3 class="-mx-2 -my-3 flow-root">
                                         <!-- Expand/collapse section button -->
                                         <button type="button" @click="openTags = !openTags"
-                                            class="flex w-full items-center justify-between bg-white dark:bg-gray-900 px-2 py-3 text-sm text-gray-400 dark:text-white"
+                                            class="flex w-full items-center justify-between bg-white dark:bg-gray-950 px-2 py-3 text-sm text-gray-400 dark:text-white"
                                             aria-controls="filter-section-0" aria-expanded="false">
                                             <span
-                                                class="font-medium text-gray-900 dark:text-white">{{ __('nody-blog::blog.tags') }}</span>
+                                                class="font-medium text-gray-950 dark:text-white">{{ __('nody-blog::blog.tags') }}</span>
                                             <span class="ml-6 flex items-center">
                                                 <svg class="rotate-0 h-5 w-5 transform" viewBox="0 0 20 20"
                                                     fill="currentColor" aria-hidden="true">
@@ -118,12 +118,12 @@
                     <section aria-labelledby="filter-heading"">
                         <h2 id="filter-heading" class="sr-only">{{ __('nody-blog::blog.filters') }}</h2>
 
-                        <div class="border-b border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 pb-4">
+                        <div class="border-b border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 pb-4">
                             <div class="mx-auto flex max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
                                 <div class="relative inline-block text-left" x-data="{ open: false }">
                                     <div>
                                         <button type="button" @click="open = !open"
-                                            class="group inline-flex justify-center text-sm font-medium text-gray-700 dark:text-white  hover:text-gray-900 dark:hover:text-gray-200"
+                                            class="group inline-flex justify-center text-sm font-medium text-gray-800 dark:text-white  hover:text-gray-950 dark:hover:text-gray-200"
                                             id="menu-button" aria-expanded="false" aria-haspopup="true">
                                             Sort
                                             <svg class="-mr-1 ml-1 h-5 w-5 flex-shrink-0 text-gray-400 dark:text-gray-200 group-hover:text-gray-500 dark:group-hover:text-gray-200"
@@ -135,17 +135,17 @@
                                         </button>
                                     </div>
                                     <div x-show="open" @click.away="open = false" x-transition
-                                        class="absolute left-0 z-10 mt-2 w-40 origin-top-left rounded-md bg-white dark:bg-gray-900 shadow-2xl ring-1 ring-black ring-opacity-5 focus:outline-none"
+                                        class="absolute left-0 z-10 mt-2 w-40 origin-top-left rounded-md bg-white dark:bg-gray-950 shadow-2xl ring-1 ring-black ring-opacity-5 focus:outline-none"
                                         role="menu" aria-orientation="vertical" aria-labelledby="menu-button"
                                         tabindex="-1">
                                         <div class="py-1" role="none">
                                             <span wire:click="sortBy('best-rating')"
-                                                class="text-gray-900 dark:text-white hover:text-indigo-600 dark:hover:text-indigo-500 transition block px-4 py-2 text-sm cursor-pointer"
+                                                class="text-gray-950 dark:text-white hover:text-indigo-600 dark:hover:text-indigo-500 transition block px-4 py-2 text-sm cursor-pointer"
                                                 role="menuitem" tabindex="-1" id="menu-item-1">
                                                 Best Rating
                                             </span>
                                             <span wire:click="sortBy('newest')"
-                                                class="text-gray-900 dark:text-white hover:text-indigo-600 dark:hover:text-indigo-500 transition block px-4 py-2 text-sm cursor-pointer"
+                                                class="text-gray-950 dark:text-white hover:text-indigo-600 dark:hover:text-indigo-500 transition block px-4 py-2 text-sm cursor-pointer"
                                                 role="menuitem" tabindex="-1" id="menu-item-2">
                                                 Newest
                                             </span>
@@ -155,27 +155,27 @@
 
                                 <!-- Mobile filter dialog toggle, controls the 'mobileFiltersOpen' state. -->
                                 <button type="button" @click="open = !open"
-                                    class="inline-block text-sm font-medium text-gray-700 dark:text-white hover:text-gray-900 dark:hover:text-gray-200 sm:hidden">
+                                    class="inline-block text-sm font-medium text-gray-800 dark:text-white hover:text-gray-950 dark:hover:text-gray-200 sm:hidden">
                                     {{ __('nody-blog::blog.filters') }}
                                 </button>
 
                                 <div class="hidden sm:block">
                                     <div class="flow-root">
                                         <div
-                                            class="-mx-4 flex items-center divide-x divide-gray-200 dark:divide-gray-700">
+                                            class="-mx-4 flex items-center divide-x divide-gray-200 dark:divide-gray-800">
                                             <div class="relative inline-block px-4 text-left" x-data="{ open: false }">
                                                 <button type="button" @click="open = !open"
-                                                    class="group inline-flex justify-center text-sm font-medium text-gray-700 dark:text-white hover:text-gray-900 dark:hover:text-gray-200"
+                                                    class="group inline-flex justify-center text-sm font-medium text-gray-800 dark:text-white hover:text-gray-950 dark:hover:text-gray-200"
                                                     aria-expanded="false">
                                                     <span>{{ __('nody-blog::blog.categories') }}</span>
                                                     @if (!empty($this->selectedCategory))
                                                         <span
-                                                            class="ml-1.5 rounded border border-gray-300 dark:border-indigo-500 bg-gray-200 dark:bg-indigo-500/30 px-1.5 py-0.5 text-xs font-semibold tabular-nums text-gray-700 dark:text-white">
+                                                            class="ml-1.5 rounded border border-gray-300 dark:border-indigo-500 bg-gray-200 dark:bg-indigo-500/30 px-1.5 py-0.5 text-xs font-semibold tabular-nums text-gray-800 dark:text-white">
                                                             1
                                                         </span>
                                                     @else
                                                         <span
-                                                            class="ml-1.5 rounded border border-gray-300 dark:border-indigo-500 bg-gray-200 dark:bg-indigo-500/30 px-1.5 py-0.5 text-xs font-semibold tabular-nums text-gray-700 dark:text-white">
+                                                            class="ml-1.5 rounded border border-gray-300 dark:border-indigo-500 bg-gray-200 dark:bg-indigo-500/30 px-1.5 py-0.5 text-xs font-semibold tabular-nums text-gray-800 dark:text-white">
                                                             0
                                                         </span>
                                                     @endif
@@ -187,7 +187,7 @@
                                                     </svg>
                                                 </button>
                                                 <div x-show="open" @click.away="open = false" x-transition
-                                                    class="absolute right-0 z-10 mt-2 origin-top-right rounded-md bg-white dark:bg-gray-900 p-4 shadow-2xl ring-1 ring-black ring-opacity-5 focus:outline-none">
+                                                    class="absolute right-0 z-10 mt-2 origin-top-right rounded-md bg-white dark:bg-gray-950 p-4 shadow-2xl ring-1 ring-black ring-opacity-5 focus:outline-none">
                                                     <form class="space-y-4">
                                                         @foreach ($this->categories as $category)
                                                             <div class="flex items-center"
@@ -198,7 +198,7 @@
                                                                     wire:click="filterByCategory({{ $category->id }})"
                                                                     class="border-gray-300 text-indigo-600 focus:ring-indigo-500">
                                                                 <label for="filter-category"
-                                                                    class="ml-3 whitespace-nowrap pr-6 text-sm font-medium text-gray-900 dark:text-white">
+                                                                    class="ml-3 whitespace-nowrap pr-6 text-sm font-medium text-gray-950 dark:text-white">
                                                                     {{ $category->name }}
                                                                 </label>
                                                             </div>
@@ -208,17 +208,17 @@
                                             </div>
                                             <div class="relative inline-block px-4 text-left" x-data="{ open: false }">
                                                 <button type="button" @click="open = !open"
-                                                    class="group inline-flex justify-center text-sm font-medium text-gray-700 dark:text-white hover:text-gray-900 dark:hover:text-gray-200"
+                                                    class="group inline-flex justify-center text-sm font-medium text-gray-800 dark:text-white hover:text-gray-950 dark:hover:text-gray-200"
                                                     aria-expanded="false">
                                                     <span>{{ __('nody-blog::blog.tags') }}</span>
                                                     @if (!empty($this->selectedTags))
                                                         <span
-                                                            class="ml-1.5 rounded border border-gray-300 dark:border-indigo-500 bg-gray-200 dark:bg-indigo-500/30 px-1.5 py-0.5 text-xs font-semibold tabular-nums text-gray-700 dark:text-white">
+                                                            class="ml-1.5 rounded border border-gray-300 dark:border-indigo-500 bg-gray-200 dark:bg-indigo-500/30 px-1.5 py-0.5 text-xs font-semibold tabular-nums text-gray-800 dark:text-white">
                                                             {{ count($this->selectedTags) }}
                                                         </span>
                                                     @else
                                                         <span
-                                                            class="ml-1.5 rounded border border-gray-300 dark:border-indigo-500 bg-gray-200 dark:bg-indigo-500/30 px-1.5 py-0.5 text-xs font-semibold tabular-nums text-gray-700 dark:text-white">
+                                                            class="ml-1.5 rounded border border-gray-300 dark:border-indigo-500 bg-gray-200 dark:bg-indigo-500/30 px-1.5 py-0.5 text-xs font-semibold tabular-nums text-gray-800 dark:text-white">
                                                             0
                                                         </span>
                                                     @endif
@@ -230,7 +230,7 @@
                                                     </svg>
                                                 </button>
                                                 <div x-show="open" @click.away="open = false" x-transition
-                                                    class="absolute right-0 z-10 mt-2 origin-top-right rounded-md bg-white dark:bg-gray-900 p-4 shadow-2xl ring-1 ring-black ring-opacity-5 focus:outline-none">
+                                                    class="absolute right-0 z-10 mt-2 origin-top-right rounded-md bg-white dark:bg-gray-950 p-4 shadow-2xl ring-1 ring-black ring-opacity-5 focus:outline-none">
                                                     <form class="space-y-4">
                                                         @foreach ($this->tags as $tag)
                                                             <div class="flex items-center"
@@ -241,7 +241,7 @@
                                                                     wire:click="filterByTags({{ $tag->id }})"
                                                                     class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500">
                                                                 <label for="filter-tags"
-                                                                    class="ml-3 whitespace-nowrap pr-6 text-sm font-medium text-gray-900 dark:text-white">
+                                                                    class="ml-3 whitespace-nowrap pr-6 text-sm font-medium text-gray-950 dark:text-white">
                                                                     {{ $tag->name }}
                                                                 </label>
                                                             </div>
@@ -256,7 +256,7 @@
                         </div>
 
                         <!-- Active filters -->
-                        <div class="bg-gray-100 dark:bg-gray-800">
+                        <div class="bg-gray-100 dark:bg-gray-900">
                             <div class="mx-auto max-w-7xl px-4 py-3 sm:flex sm:items-center sm:px-6 lg:px-8">
                                 @if ($this->selectedCategoryName || $this->selectedTagsName)
                                     <h3 class="text-sm font-medium text-gray-500 dark:text-white hover:text-indigo-600 dark:hover:text-indigo-500 transition cursor-pointer"
@@ -273,20 +273,20 @@
 
 
                                 <div aria-hidden="true"
-                                    class="hidden h-5 w-px bg-gray-300 dark:bg-gray-700 sm:ml-4 sm:block"></div>
+                                    class="hidden h-5 w-px bg-gray-300 dark:bg-gray-800 sm:ml-4 sm:block"></div>
 
                                 <div class="mt-2 sm:ml-4 sm:mt-0">
                                     <div class="-m-1 flex flex-wrap items-center">
                                         @if ($this->selectedCategoryName)
                                             <span
-                                                class="m-1 inline-flex items-center rounded-full border border-gray-200 dark:border-indigo-500 bg-white dark:bg-indigo-500/30 py-1.5 px-3 text-sm font-medium text-gray-900 dark:text-white">
+                                                class="m-1 inline-flex items-center rounded-full border border-gray-200 dark:border-indigo-500 bg-white dark:bg-indigo-500/30 py-1.5 px-3 text-sm font-medium text-gray-950 dark:text-white">
                                                 <span>{{ $this->selectedCategoryName }}</span>
                                             </span>
                                         @endif
                                         @if ($this->selectedTagsName)
                                             @foreach ($this->selectedTagsName as $tag)
                                                 <span wire:key="{{ $tag }}"
-                                                    class="m-1 inline-flex items-center rounded-full border border-gray-200 dark:border-indigo-500 bg-white dark:bg-indigo-500/30 py-1.5 px-3 text-sm font-medium text-gray-900 dark:text-white">
+                                                    class="m-1 inline-flex items-center rounded-full border border-gray-200 dark:border-indigo-500 bg-white dark:bg-indigo-500/30 py-1.5 px-3 text-sm font-medium text-gray-950 dark:text-white">
                                                     <x-heroicon-o-tag class="h-4 w-4 mr-2" />
                                                     <span>{{ $tag }}</span>
                                                 </span>
@@ -300,9 +300,9 @@
                 </div>
             @endif
             <div
-                class="flex flex-col gap-y-4 p-4 justify-center items-center bg-gray-100 dark:bg-gray-800 rounded-lg text-center">
-                <x-heroicon-o-inbox class="w-12 h-12 text-gray-700 dark:text-white" />
-                <p class="text-gray-700 dark:text-white text-xl">{{ __('nody-blog::blog.empty_posts') }}</p>
+                class="flex flex-col gap-y-4 p-4 justify-center items-center bg-gray-100 dark:bg-gray-900 rounded-lg text-center">
+                <x-heroicon-o-inbox class="w-12 h-12 text-gray-800 dark:text-white" />
+                <p class="text-gray-800 dark:text-white text-xl">{{ __('nody-blog::blog.empty_posts') }}</p>
             </div>
         </div>
     @else
@@ -312,7 +312,7 @@
                     <div class="relative w-full mt-2">
                         <input type="text" name="search" id="search"
                             placeholder="{{ __('nody-blog::blog.search_placeholder') }}" wire:model.live="search"
-                            class="block w-full rounded-md border-0 py-1.5 pr-14 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                            class="block w-full rounded-md border-0 py-1.5 pr-14 text-gray-950 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
                     </div>
                 </div>
             @endif
@@ -323,12 +323,12 @@
 
                         <div class="fixed inset-0 z-40 flex">
                             <div
-                                class="relative ml-auto flex h-full w-full max-w-xs flex-col overflow-y-auto bg-white dark:bg-gray-900 py-4 pb-12 shadow-xl">
+                                class="relative ml-auto flex h-full w-full max-w-xs flex-col overflow-y-auto bg-white dark:bg-gray-950 py-4 pb-12 shadow-xl">
                                 <div class="flex items-center justify-between px-4 mb-4">
-                                    <h2 class="text-lg font-medium text-gray-900 dark:text-white">
+                                    <h2 class="text-lg font-medium text-gray-950 dark:text-white">
                                         {{ __('nody-blog::blog.filters') }}</h2>
                                     <button type="button" @click="open = false"
-                                        class="-mr-2 flex h-10 w-10 items-center justify-center rounded-md bg-white dark:bg-gray-800 p-2 text-gray-400">
+                                        class="-mr-2 flex h-10 w-10 items-center justify-center rounded-md bg-white dark:bg-gray-900 p-2 text-gray-400">
                                         <span class="sr-only">Close menu</span>
                                         <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                                             stroke="currentColor" aria-hidden="true">
@@ -339,14 +339,14 @@
                                 </div>
 
                                 <!-- Filters -->
-                                <div class="border-t border-gray-200 dark:border-gray-700 px-4 py-6"
+                                <div class="border-t border-gray-200 dark:border-gray-800 px-4 py-6"
                                     x-data="{ openCategories: false }">
                                     <h3 class="-mx-2 -my-3 flow-root">
                                         <!-- Expand/collapse section button -->
                                         <button type="button" @click="openCategories = !openCategories"
-                                            class="flex w-full items-center justify-between bg-white dark:bg-gray-900 px-2 py-3 text-sm text-gray-400 dark:text-white"
+                                            class="flex w-full items-center justify-between bg-white dark:bg-gray-950 px-2 py-3 text-sm text-gray-400 dark:text-white"
                                             aria-controls="filter-section-0" aria-expanded="false">
-                                            <span class="font-medium text-gray-900 dark:text-white">
+                                            <span class="font-medium text-gray-950 dark:text-white">
                                                 {{ __('nody-blog::blog.categories') }}
                                             </span>
                                             <span class="ml-6 flex items-center">
@@ -378,14 +378,14 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="border-t border-gray-200 dark:border-gray-700 px-4 py-6"
+                                <div class="border-t border-gray-200 dark:border-gray-800 px-4 py-6"
                                     x-data="{ openTags: false }">
                                     <h3 class="-mx-2 -my-3 flow-root">
                                         <!-- Expand/collapse section button -->
                                         <button type="button" @click="openTags = !openTags"
-                                            class="flex w-full items-center justify-between bg-white dark:bg-gray-900 px-2 py-3 text-sm text-gray-400 dark:text-white"
+                                            class="flex w-full items-center justify-between bg-white dark:bg-gray-950 px-2 py-3 text-sm text-gray-400 dark:text-white"
                                             aria-controls="filter-section-0" aria-expanded="false">
-                                            <span class="font-medium text-gray-900 dark:text-white">
+                                            <span class="font-medium text-gray-950 dark:text-white">
                                                 {{ __('nody-blog::blog.tags') }}
                                             </span>
                                             <span class="ml-6 flex items-center">
@@ -425,12 +425,12 @@
                     <section aria-labelledby="filter-heading"">
                         <h2 id="filter-heading" class="sr-only">{{ __('nody-blog::blog.filters') }}</h2>
 
-                        <div class="border-b border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 pb-4">
+                        <div class="border-b border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 pb-4">
                             <div class="mx-auto flex max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
                                 <div class="relative inline-block text-left" x-data="{ open: false }">
                                     <div>
                                         <button type="button" @click="open = !open"
-                                            class="group inline-flex justify-center text-sm font-medium text-gray-700 dark:text-white  hover:text-gray-900 dark:hover:text-gray-200"
+                                            class="group inline-flex justify-center text-sm font-medium text-gray-800 dark:text-white  hover:text-gray-950 dark:hover:text-gray-200"
                                             id="menu-button" aria-expanded="false" aria-haspopup="true">
                                             {{ __('nody-blog::blog.sort_by') }}
                                             <svg class="-mr-1 ml-1 h-5 w-5 flex-shrink-0 text-gray-400 dark:text-gray-200 group-hover:text-gray-500 dark:group-hover:text-gray-200"
@@ -442,17 +442,17 @@
                                         </button>
                                     </div>
                                     <div x-show="open" @click.away="open = false" x-transition
-                                        class="absolute left-0 z-10 mt-2 w-40 origin-top-left rounded-md bg-white dark:bg-gray-900 shadow-2xl ring-1 ring-black ring-opacity-5 focus:outline-none"
+                                        class="absolute left-0 z-10 mt-2 w-40 origin-top-left rounded-md bg-white dark:bg-gray-950 shadow-2xl ring-1 ring-black ring-opacity-5 focus:outline-none"
                                         role="menu" aria-orientation="vertical" aria-labelledby="menu-button"
                                         tabindex="-1">
                                         <div class="py-1" role="none">
                                             <span wire:click="sortBy('best-rating')"
-                                                class="text-gray-900 dark:text-white hover:text-indigo-600 dark:hover:text-indigo-500 transition block px-4 py-2 text-sm cursor-pointer"
+                                                class="text-gray-950 dark:text-white hover:text-indigo-600 dark:hover:text-indigo-500 transition block px-4 py-2 text-sm cursor-pointer"
                                                 role="menuitem" tabindex="-1" id="menu-item-1">
                                                 {{ __('nody-blog::blog.best_rating') }}
                                             </span>
                                             <span wire:click="sortBy('newest')"
-                                                class="text-gray-900 dark:text-white hover:text-indigo-600 dark:hover:text-indigo-500 transition block px-4 py-2 text-sm cursor-pointer"
+                                                class="text-gray-950 dark:text-white hover:text-indigo-600 dark:hover:text-indigo-500 transition block px-4 py-2 text-sm cursor-pointer"
                                                 role="menuitem" tabindex="-1" id="menu-item-2">
                                                 {{ __('nody-blog::blog.newest') }}
                                             </span>
@@ -462,28 +462,28 @@
 
                                 <!-- Mobile filter dialog toggle, controls the 'mobileFiltersOpen' state. -->
                                 <button type="button" @click="open = !open"
-                                    class="inline-block text-sm font-medium text-gray-700 dark:text-white hover:text-gray-900 dark:hover:text-gray-200 sm:hidden">
+                                    class="inline-block text-sm font-medium text-gray-800 dark:text-white hover:text-gray-950 dark:hover:text-gray-200 sm:hidden">
                                     {{ __('nody-blog::blog.filters') }}
                                 </button>
 
                                 <div class="hidden sm:block">
                                     <div class="flow-root">
                                         <div
-                                            class="-mx-4 flex items-center divide-x divide-gray-200 dark:divide-gray-700">
+                                            class="-mx-4 flex items-center divide-x divide-gray-200 dark:divide-gray-800">
                                             <div class="relative inline-block px-4 text-left"
                                                 x-data="{ open: false }">
                                                 <button type="button" @click="open = !open"
-                                                    class="group inline-flex justify-center text-sm font-medium text-gray-700 dark:text-white hover:text-gray-900 dark:hover:text-gray-200"
+                                                    class="group inline-flex justify-center text-sm font-medium text-gray-800 dark:text-white hover:text-gray-950 dark:hover:text-gray-200"
                                                     aria-expanded="false">
                                                     <span>{{ __('nody-blog::blog.categories') }}</span>
                                                     @if (!empty($this->selectedCategory))
                                                         <span
-                                                            class="ml-1.5 rounded border border-gray-300 dark:border-indigo-500 bg-gray-200 dark:bg-indigo-500/30 px-1.5 py-0.5 text-xs font-semibold tabular-nums text-gray-700 dark:text-white">
+                                                            class="ml-1.5 rounded border border-gray-300 dark:border-indigo-500 bg-gray-200 dark:bg-indigo-500/30 px-1.5 py-0.5 text-xs font-semibold tabular-nums text-gray-800 dark:text-white">
                                                             1
                                                         </span>
                                                     @else
                                                         <span
-                                                            class="ml-1.5 rounded border border-gray-300 dark:border-indigo-500 bg-gray-200 dark:bg-indigo-500/30 px-1.5 py-0.5 text-xs font-semibold tabular-nums text-gray-700 dark:text-white">
+                                                            class="ml-1.5 rounded border border-gray-300 dark:border-indigo-500 bg-gray-200 dark:bg-indigo-500/30 px-1.5 py-0.5 text-xs font-semibold tabular-nums text-gray-800 dark:text-white">
                                                             0
                                                         </span>
                                                     @endif
@@ -495,7 +495,7 @@
                                                     </svg>
                                                 </button>
                                                 <div x-show="open" @click.away="open = false" x-transition
-                                                    class="absolute right-0 z-10 mt-2 origin-top-right rounded-md bg-white dark:bg-gray-900 p-4 shadow-2xl ring-1 ring-black ring-opacity-5 focus:outline-none">
+                                                    class="absolute right-0 z-10 mt-2 origin-top-right rounded-md bg-white dark:bg-gray-950 p-4 shadow-2xl ring-1 ring-black ring-opacity-5 focus:outline-none">
                                                     <form class="space-y-4">
                                                         @foreach ($this->categories as $category)
                                                             <div class="flex items-center"
@@ -506,7 +506,7 @@
                                                                     wire:click="filterByCategory({{ $category->id }})"
                                                                     class="border-gray-300 text-indigo-600 focus:ring-indigo-500">
                                                                 <label for="filter-category"
-                                                                    class="ml-3 whitespace-nowrap pr-6 text-sm font-medium text-gray-900 dark:text-white">
+                                                                    class="ml-3 whitespace-nowrap pr-6 text-sm font-medium text-gray-950 dark:text-white">
                                                                     {{ $category->name }}
                                                                 </label>
                                                             </div>
@@ -517,17 +517,17 @@
                                             <div class="relative inline-block px-4 text-left"
                                                 x-data="{ open: false }">
                                                 <button type="button" @click="open = !open"
-                                                    class="group inline-flex justify-center text-sm font-medium text-gray-700 dark:text-white hover:text-gray-900 dark:hover:text-gray-200"
+                                                    class="group inline-flex justify-center text-sm font-medium text-gray-800 dark:text-white hover:text-gray-950 dark:hover:text-gray-200"
                                                     aria-expanded="false">
                                                     <span>{{ __('nody-blog::blog.tags') }}</span>
                                                     @if (!empty($this->selectedTags))
                                                         <span
-                                                            class="ml-1.5 rounded border border-gray-300 dark:border-indigo-500 bg-gray-200 dark:bg-indigo-500/30 px-1.5 py-0.5 text-xs font-semibold tabular-nums text-gray-700 dark:text-white">
+                                                            class="ml-1.5 rounded border border-gray-300 dark:border-indigo-500 bg-gray-200 dark:bg-indigo-500/30 px-1.5 py-0.5 text-xs font-semibold tabular-nums text-gray-800 dark:text-white">
                                                             {{ count($this->selectedTags) }}
                                                         </span>
                                                     @else
                                                         <span
-                                                            class="ml-1.5 rounded border border-gray-300 dark:border-indigo-500 bg-gray-200 dark:bg-indigo-500/30 px-1.5 py-0.5 text-xs font-semibold tabular-nums text-gray-700 dark:text-white">
+                                                            class="ml-1.5 rounded border border-gray-300 dark:border-indigo-500 bg-gray-200 dark:bg-indigo-500/30 px-1.5 py-0.5 text-xs font-semibold tabular-nums text-gray-800 dark:text-white">
                                                             0
                                                         </span>
                                                     @endif
@@ -539,7 +539,7 @@
                                                     </svg>
                                                 </button>
                                                 <div x-show="open" @click.away="open = false" x-transition
-                                                    class="absolute right-0 z-10 mt-2 origin-top-right rounded-md bg-white dark:bg-gray-900 p-4 shadow-2xl ring-1 ring-black ring-opacity-5 focus:outline-none">
+                                                    class="absolute right-0 z-10 mt-2 origin-top-right rounded-md bg-white dark:bg-gray-950 p-4 shadow-2xl ring-1 ring-black ring-opacity-5 focus:outline-none">
                                                     <form class="space-y-4">
                                                         @foreach ($this->tags as $tag)
                                                             <div class="flex items-center"
@@ -550,7 +550,7 @@
                                                                     wire:click="filterByTags({{ $tag->id }})"
                                                                     class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500">
                                                                 <label for="filter-tags"
-                                                                    class="ml-3 whitespace-nowrap pr-6 text-sm font-medium text-gray-900 dark:text-white">
+                                                                    class="ml-3 whitespace-nowrap pr-6 text-sm font-medium text-gray-950 dark:text-white">
                                                                     {{ $tag->name }}
                                                                 </label>
                                                             </div>
@@ -565,7 +565,7 @@
                         </div>
 
                         <!-- Active filters -->
-                        <div class="bg-gray-100 dark:bg-gray-800">
+                        <div class="bg-gray-100 dark:bg-gray-900">
                             <div class="mx-auto max-w-7xl px-4 py-3 sm:flex sm:items-center sm:px-6 lg:px-8">
                                 @if ($this->selectedCategoryName || $this->selectedTagsName)
                                     <h3 class="text-sm font-medium text-gray-500 dark:text-white hover:text-indigo-600 dark:hover:text-indigo-500 transition cursor-pointer"
@@ -582,20 +582,20 @@
 
 
                                 <div aria-hidden="true"
-                                    class="hidden h-5 w-px bg-gray-300 dark:bg-gray-700 sm:ml-4 sm:block"></div>
+                                    class="hidden h-5 w-px bg-gray-300 dark:bg-gray-800 sm:ml-4 sm:block"></div>
 
                                 <div class="mt-2 sm:ml-4 sm:mt-0">
                                     <div class="-m-1 flex flex-wrap items-center">
                                         @if ($this->selectedCategoryName)
                                             <span
-                                                class="m-1 inline-flex items-center rounded-full border border-gray-200 dark:border-indigo-500 bg-white dark:bg-indigo-500/30 py-1.5 px-3 text-sm font-medium text-gray-900 dark:text-white">
+                                                class="m-1 inline-flex items-center rounded-full border border-gray-200 dark:border-indigo-500 bg-white dark:bg-indigo-500/30 py-1.5 px-3 text-sm font-medium text-gray-950 dark:text-white">
                                                 <span>{{ $this->selectedCategoryName }}</span>
                                             </span>
                                         @endif
                                         @if ($this->selectedTagsName)
                                             @foreach ($this->selectedTagsName as $tag)
                                                 <span wire:key="{{ $tag }}"
-                                                    class="m-1 inline-flex items-center rounded-full border border-gray-200 dark:border-indigo-500 bg-white dark:bg-indigo-500/30 py-1.5 px-3 text-sm font-medium text-gray-900 dark:text-white">
+                                                    class="m-1 inline-flex items-center rounded-full border border-gray-200 dark:border-indigo-500 bg-white dark:bg-indigo-500/30 py-1.5 px-3 text-sm font-medium text-gray-950 dark:text-white">
                                                     <x-heroicon-o-tag class="h-4 w-4 mr-2" />
                                                     <span>{{ $tag }}</span>
                                                 </span>
@@ -624,13 +624,13 @@
                                 <div class="mt-8 flex items-center justify-between gap-x-4 text-xs">
                                     <div class="flex items-center gap-x-2">
                                         <time datetime="2020-03-16"
-                                            class="text-gray-100">{{ $post->formatDate() }}</time>
+                                            class="text-black dark:text-gray-100">{{ $post->formatDate() }}</time>
                                         <span
                                             class="relative z-10 rounded-full bg-indigo-500/10 px-3 py-1 text-sm font-semibold leading-6 text-indigo-400 ring-1 ring-inset ring-indigo-500/20">
                                             {{ $post->category->name }}
                                         </span>
                                     </div>
-                                    <div class="flex gap-x-6 text-gray-400">
+                                    <div class="flex gap-x-6 text-black dark:text-gray-400">
                                         <span class="flex items-center gap-x-2 text-md">
                                             {{ $post->countLikes() }}
                                             <x-heroicon-o-heart class="w-4 h-4" />
@@ -641,7 +641,7 @@
                                         </span>
                                     </div>
                                 </div>
-                                <div class="flex justify-end gap-x-2 text-xs text-gray-400">
+                                <div class="flex justify-end gap-x-2 text-xs text-black dark:text-gray-400">
                                     <x-heroicon-o-clock class="w-4 h-4" />
                                     <span>
                                         {{ $post->getReadingTime() }}
@@ -650,13 +650,13 @@
                                 </div>
                                 <div class="group relative">
                                     <h3
-                                        class="mt-3 text-lg font-semibold leading-6 text-white group-hover:text-gray-200">
+                                        class="mt-3 text-lg font-semibold leading-6 text-black dark:text-white group-hover:text-gray-200">
                                         <a href="{{ route('blog.show', [$post->category->slug, $post->slug]) }}">
                                             <span class="absolute inset-0"></span>
                                             {{ $post->title }}
                                         </a>
                                     </h3>
-                                    <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-100">
+                                    <p class="mt-5 line-clamp-3 text-sm leading-6 text-black dark:text-gray-100">
                                         {{ $post->excerpt }}
                                     </p>
                                 </div>

@@ -24,9 +24,9 @@
     ];
 @endphp
 <section id="processus"
-    class="relative isolate overflow-hidden bg-gray-950 px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0">
+    class="relative isolate overflow-hidden bg-white dark:bg-gray-950 px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0">
     <div class="absolute inset-0 -z-10 overflow-hidden">
-        <svg class="absolute inset-0 -z-10 h-full w-full stroke-white/10 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
+        <svg class="absolute inset-0 -z-10 h-full w-full stroke-black/10 dark:stroke-white/10 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
             aria-hidden="true">
             <defs>
                 <pattern id="983e3e4c-de6d-4c3f-8d64-b9761d1534cc" width="200" height="200" x="50%" y="-1"
@@ -34,7 +34,7 @@
                     <path d="M.5 200V.5H200" fill="none" />
                 </pattern>
             </defs>
-            <svg x="50%" y="-1" class="overflow-visible fill-gray-800/20">
+            <svg x="50%" y="-1" class="overflow-visible fill-gray-400/20 dark:fill-gray-800/20">
                 <path d="M-200 0h201v201h-201Z M600 0h201v201h-201Z M-400 600h201v201h-201Z M200 800h201v201h-201Z"
                     stroke-width="0" />
             </svg>
@@ -52,10 +52,11 @@
                         Mon process
                     </p>
                     <h2 data-aos="fade-right" data-aos-delay="300"
-                        class="mt-2 text-4xl font-bold tracking-tight text-gray-100 sm:text-6xl">
+                        class="mt-2 text-4xl font-bold tracking-tight text-black dark:text-gray-100 sm:text-6xl">
                         Comment ça marche de collaborer <span class=" whitespace-nowrap">avec moi ?</span>
                     </h2>
-                    <p data-aos="fade-in" data-aos-delay="400" class="mt-6 text-xl leading-8 text-gray-200">J'ai un
+                    <p data-aos="fade-in" data-aos-delay="400"
+                        class="mt-6 text-xl leading-8 text-black dark:text-gray-200">J'ai un
                         processus clair et précis pour que l'on
                         collabore en toute confiance et de manière efficiente vers notre but commun : décuplez vos
                         ventes grâce à votre site web.</p>
@@ -81,7 +82,7 @@
                                 <span class="flex h-9 items-center">
                                     <span
                                         class="relative z-10 flex h-8 w-8 items-center justify-center rounded-full bg-gradient-to-r from-primary to-secondary group-hover:bg-indigo-800">
-                                        <span class="text-white">{{ $step }}</span>
+                                        <span class="text-black dark:text-white">{{ $step }}</span>
                                     </span>
                                 </span>
                                 <span class="ml-4 flex min-w-0 flex-col">
@@ -89,7 +90,7 @@
                                         class="text-sm font-medium bg-gradient-to-r from-primary to-secondary text-transparent bg-clip-text">
                                         {{ $item['title'] }}
                                     </span>
-                                    <span class="text-sm text-gray-500">
+                                    <span class="text-sm text-black dark:text-gray-500">
                                         {{ $item['description'] }}
                                     </span>
                                 </span>
@@ -106,12 +107,12 @@
         <div data-aos="fade-right" data-aos-delay="400"
             class="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
             <div class="lg:pr-4">
-                <div class="max-w-xl text-base leading-7 text-gray-200 lg:max-w-lg">
+                <div class="max-w-xl text-base leading-7 text-black dark:text-gray-200 lg:max-w-lg">
                     <p>Je conçois des sites web sur mesure en fonction de vos besoins spécifiques et, surtout, de ceux
                         de votre entreprise. La première étape consiste à analyser en profondeur votre entreprise, votre
                         clientèle cible et votre marché afin de définir la stratégie la plus pertinente. Je me
                         positionne en tant que consultant et analyste pour vous offrir une solution adaptée.</p>
-                    <ul role="list" class="mt-8 space-y-8 text-gray-300">
+                    <ul role="list" class="mt-8 space-y-8 text-black dark:text-gray-300">
                         <li class="flex gap-x-3">
                             <span><strong
                                     class="font-semibold bg-gradient-to-r from-primary to-secondary text-transparent bg-clip-text">Push
@@ -136,7 +137,8 @@
                         blandit molestie auctor fermentum dignissim. Lacus diam tincidunt ac cursus in vel. Mauris
                         varius vulputate et ultrices hac adipiscing egestas. Iaculis convallis ac tempor et ut. Ac lorem
                         vel integer orci.</p>
-                    <h2 class="mt-16 text-2xl font-bold tracking-tight text-gray-200">No server? No problem.</h2>
+                    <h2 class="mt-16 text-2xl font-bold tracking-tight text-black dark:text-gray-200">No server? No
+                        problem.</h2>
                     <p class="mt-6">Id orci tellus laoreet id ac. Dolor, aenean leo, ac etiam consequat in. Convallis
                         arcu ipsum urna nibh. Pharetra, euismod vitae interdum mauris enim, consequat vulputate nibh.
                         Maecenas pellentesque id sed tellus mauris, ultrices mauris. Tincidunt enim cursus ridiculus mi.

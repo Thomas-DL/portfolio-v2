@@ -1,4 +1,4 @@
-<section id="avis" class="relative isolate bg-gray-950 pb-16 pt-12 sm:pt-16">
+<section id="avis" class="relative isolate bg-white dark:bg-gray-950 pb-16 pt-12 sm:pt-16">
     <div class="absolute inset-x-0 top-1/2 -z-10 -translate-y-1/2 transform-gpu overflow-hidden opacity-30 blur-3xl"
         aria-hidden="true">
         <div class="ml-[max(50%,38rem)] aspect-[1313/771] w-[82.0625rem] bg-gradient-to-tr from-primary to-secondary"
@@ -18,7 +18,7 @@
                 Avis
             </h2>
             <p data-aos="fade-up" data-aos-delay="200"
-                class="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">
+                class="mt-2 text-3xl font-bold tracking-tight text-black dark:text-white sm:text-4xl">
                 Ce que mes clients pensent de mes services.
             </p>
         </div>

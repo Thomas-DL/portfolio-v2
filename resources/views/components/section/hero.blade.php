@@ -1,5 +1,5 @@
-<div class="relative  overflow-hidden bg-gray-950">
-    <svg class="absolute inset-0 z-10 h-full w-full stroke-white/10 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
+<div class="relative  overflow-hidden bg-white dark:bg-gray-950">
+    <svg class="absolute inset-0 z-10 h-full w-full stroke-black/10 dark:stroke-white/10 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
         aria-hidden="true">
         <defs>
             <pattern id="983e3e4c-de6d-4c3f-8d64-b9761d1534cc" width="200" height="200" x="50%" y="-1"
@@ -7,7 +7,7 @@
                 <path d="M.5 200V.5H200" fill="none" />
             </pattern>
         </defs>
-        <svg x="50%" y="-1" class="overflow-visible fill-gray-800/20">
+        <svg x="50%" y="-1" class="overflow-visible fill-gray-400/20 dark:fill-gray-800/20">
             <path d="M-200 0h201v201h-201Z M600 0h201v201h-201Z M-400 600h201v201h-201Z M200 800h201v201h-201Z"
                 stroke-width="0" />
         </svg>
@@ -26,13 +26,14 @@
                     <a data-aos="fade-up" href="{{ route('blog.show', [$post[0]->category->slug, $post[0]->slug]) }}"
                         class="inline-flex flex-wrap justify-center space-y-6 min-[420px]:space-y-0 space-x-6">
                         <span
-                            class="rounded-full bg-gradient-to-r from-primary to-secondary px-3 py-1 text-sm font-semibold leading-6 text-white">
+                            class="rounded-full bg-gradient-to-r from-primary to-secondary px-3 py-1 text-sm font-semibold leading-6 text-gray-950 dark:text-white">
                             Nouveau !
                         </span>
-                        <span class="inline-flex items-center space-x-2 text-sm font-medium leading-6 text-gray-200">
+                        <span
+                            class="inline-flex items-center space-x-2 text-sm font-medium leading-6 text-gray-950 dark:text-gray-200">
                             <span>{{ $post[0]->title }}</span>
-                            <svg class="h-5 w-5 text-gray-200" viewBox="0 0 20 20" fill="currentColor"
-                                aria-hidden="true">
+                            <svg class="h-5 w-5 text-gray-950 dark:text-gray-200" viewBox="0 0 20 20"
+                                fill="currentColor" aria-hidden="true">
                                 <path fill-rule="evenodd"
                                     d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z"
                                     clip-rule="evenodd" />
@@ -42,7 +43,7 @@
                 @endif
             </div>
             <h1 data-aos="fade-up" data-aos-delay="100"
-                class="mt-10 text-4xl font-bold tracking-tight text-white sm:text-6xl">Transformons
+                class="mt-10 text-4xl font-bold tracking-tight text-gray-950 dark:text-white sm:text-6xl">Transformons
                 ensemble
                 <span class="bg-gradient-to-r from-primary to-secondary text-transparent bg-clip-text">
                     vos
@@ -52,7 +53,8 @@
                 <span
                     class="bg-gradient-to-r from-primary to-secondary text-transparent bg-clip-text">remarquables</span>
             </h1>
-            <p data-aos="fade-up" data-aos-delay="200" class="mt-6 text-lg leading-8 text-gray-300">Je réalise pour vous
+            <p data-aos="fade-up" data-aos-delay="200" class="mt-6 text-lg leading-8 text-gray-950 dark:text-gray-300">
+                Je réalise pour vous
                 des sites vitrines
                 qui captent
                 l'attention et convertissent vos visiteurs en clients fidèles.
