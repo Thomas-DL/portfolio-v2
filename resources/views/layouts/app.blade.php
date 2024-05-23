@@ -26,6 +26,7 @@
 
     <!-- Styles -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
+    @cookieconsentscripts
 </head>
 
 <body x-data="{ darkMode: localStorage.getItem('darkMode') === 'true' }" :class="darkMode ? 'dark' : ''"
@@ -39,6 +40,20 @@
 
     @include('layouts.partials.footer')
 
+    @cookieconsentview
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-D9FM6XMCQD"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-D9FM6XMCQD');
+    </script>
 </body>
 
 </html>

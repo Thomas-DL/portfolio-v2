@@ -2,7 +2,7 @@
     <div class="relative isolate overflow-hidden bg-gradient-to-b from-gray-500/10">
         <div class="absolute inset-x-0 top-0 z-10 h-24 bg-gradient-to-b from-white dark:from-gray-950 sm:h-32">
         </div>
-        <div class="mx-auto max-w-7xl pb-24 pt-10 sm:pb-32 lg:grid lg:grid-cols-2 lg:gap-x-8 lg:px-8 lg:py-20">
+        <div class="mx-auto max-w-7xl pb-0 pt-10 sm:pb-12 lg:grid lg:grid-cols-2 lg:gap-x-8 lg:px-8 lg:py-20">
             <div data-aos="fade-right" class="px-6 lg:px-0">
                 <div class="mx-auto max-w-2xl">
                     <div class="max-w-lg">
@@ -12,11 +12,11 @@
                                 inoubliables
                             </span></h2>
                         <p class="mt-6 text-lg leading-8 text-gray-900 dark:text-gray-300">
-                            Je me concentre exclusivement sur une chose, et je m'y dédie avec une précision inégalée. Si
-                            vous recherchez un site web uniquement pour son esthétisme, avec des animations
-                            omniprésentes mais sans efficacité commerciale, alors mes services ne sont probablement pas
-                            pour vous. Mon expertise réside dans la création de sites qui génèrent de véritables
-                            résultats pour les startups et entreprises en croissance.
+                            Je me consacre entièrement à un objectif précis: créer un site efficace, rentable, qui vous
+                            apporte des résultats et rien d'autre. Si vous cherchez un site web principalement rempli
+                            d'animations, mais sans réel impact commercial, alors mes services ne vous conviendront
+                            probablement pas. Mon expertise réside dans la création de sites web qui produisent des
+                            résultats concrets pour les startups et les entreprises en pleine expansion.
                         </p>
                         <div class="mt-10 flex items-center gap-x-6">
                             <a href="#"
@@ -28,7 +28,7 @@
                                         class="relative inline-flex rounded-full h-4 w-4 text-xs justify-center items-center bg-red-500">1</span>
                                 </span>
                                 PRENDRE RDV</a>
-                            <a href="#" class="text-sm font-semibold leading-6 dark:text-gray-100">Voir mes
+                            <a href="#realisations" class="text-sm font-semibold leading-6 dark:text-gray-100">Voir mes
                                 projets
                                 <span aria-hidden="true">→</span></a>
                         </div>

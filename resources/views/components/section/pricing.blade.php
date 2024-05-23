@@ -3,9 +3,10 @@
         'headline' => 'Boost tes ventes',
         'name' => 'Landing Page',
         'features' => [
+            'Atelier de stratégie personnalisé',
             '2 Propositions design Figma',
-            '1 Landing page',
-            'Responsive',
+            '1 Landing page sur mesure',
+            'Design responsive',
             'Nom de domaine',
             'Hébergement',
             'Retours illimités',
@@ -15,13 +16,14 @@
         'headline' => 'Développe ton business',
         'name' => 'Site vitrine + Landing Page',
         'features' => [
+            'Atelier de stratégie personnalisé',
             '2 Propositions de design Figma',
             'Branding premium',
             'Kit réseaux sociaux',
             'Accompagnement stratégie SEO',
             '1 Site vitrine',
             '1 Landing page | tarif à -50%',
-            'Responsive',
+            'Design responsive',
             'Nom de domaine',
             'Hébergement',
             'Retours illimités',
@@ -31,12 +33,12 @@
         'headline' => 'Affirme ta présence en ligne',
         'name' => 'Site vitrine',
         'features' => [
+            'Atelier de stratégie personnalisé',
             '2 Propositions de design Figma',
-            'Branding premium',
             'Kit réseaux sociaux',
             'Accompagnement stratégie SEO',
-            '1 Site vitrine',
-            'Responsive',
+            '1 Site vitrine sur mesure',
+            'Design responsive',
             'Nom de domaine',
             'Hébergement',
             'Retours illimités',
@@ -73,7 +75,7 @@
                     aria-hidden="true">
                 </div>
                 <div data-aos="fade-right" data-aos-delay="300"
-                    class="relative rounded-2xl bg-gray-100/80 dark:bg-gray-800/80 ring-1 ring-black/10 dark:ring-white/10 lg:bg-transparent lg:pb-14 lg:ring-0">
+                    class="relative rounded-2xl bg-gray-100/80 dark:bg-transparent ring-1 ring-black/10 dark:ring-white/10 lg:bg-transparent lg:pb-14 lg:ring-0">
                     <div class="p-8 lg:pt-12 xl:p-10 xl:pt-14">
                         <h3 id="tier-starter" class="text-sm font-semibold leading-6 text-black dark:text-white">
                             {{ $landing['headline'] }}</h3>
@@ -143,7 +145,7 @@
                     </div>
                 </div>
                 <div data-aos="fade-left" data-aos-delay="300"
-                    class="relative rounded-2xl bg-gray-100/80 dark:bg-gray-800/80 ring-1 ring-black/10 dark:ring-white/10 lg:bg-transparent lg:pb-14 lg:ring-0">
+                    class="relative rounded-2xl bg-gray-100/80 dark:bg-transparent ring-1 ring-black/10 dark:ring-white/10 lg:bg-transparent lg:pb-14 lg:ring-0">
                     <div class="p-8 lg:pt-12 xl:p-10 xl:pt-14">
                         <h3 id="tier-growth" class="text-sm font-semibold leading-6 text-black dark:text-white">
                             {{ $website['headline'] }}

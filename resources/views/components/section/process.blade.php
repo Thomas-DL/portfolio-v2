@@ -48,7 +48,7 @@
             <div class="lg:pr-4">
                 <div class="lg:max-w-lg">
                     <p data-aos="fade-right" data-aos-delay="200"
-                        class="inline text-base font-semibold leading-7 bg-gradient-to-r from-[primary to-secondary text-transparent bg-clip-text">
+                        class="inline text-base font-semibold leading-7 bg-gradient-to-r from-primary to-secondary text-transparent bg-clip-text">
                         Mon process
                     </p>
                     <h2 data-aos="fade-right" data-aos-delay="300"
@@ -108,41 +108,53 @@
             class="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
             <div class="lg:pr-4">
                 <div class="max-w-xl text-base leading-7 text-black dark:text-gray-200 lg:max-w-lg">
-                    <p>Je conçois des sites web sur mesure en fonction de vos besoins spécifiques et, surtout, de ceux
-                        de votre entreprise. La première étape consiste à analyser en profondeur votre entreprise, votre
-                        clientèle cible et votre marché afin de définir la stratégie la plus pertinente. Je me
-                        positionne en tant que consultant et analyste pour vous offrir une solution adaptée.</p>
+                    <p>Pour travailler avec moi prenez rendez-vous, nous discuterons de votre projet et de comment
+                        atteindre vos objectifs. Vous serez accompagné du début à la fin de votre projet jusqu'à
+                        l'obtention de vos premiers résultats.</p>
                     <ul role="list" class="mt-8 space-y-8 text-black dark:text-gray-300">
                         <li class="flex gap-x-3">
-                            <span><strong
-                                    class="font-semibold bg-gradient-to-r from-primary to-secondary text-transparent bg-clip-text">Push
-                                    to deploy.</strong> Lorem ipsum,
-                                dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque,
-                                iste dolor cupiditate blanditiis ratione.</span>
+                            <span>
+                                <strong
+                                    class="font-semibold bg-gradient-to-r from-primary to-secondary text-transparent bg-clip-text">Accompagnement.
+                                </strong>
+                                Je vous accompagne dans la création de votre site web, de la stratégie à la mise en
+                                ligne.
+                            </span>
                         </li>
                         <li class="flex gap-x-3">
-                            <span><strong
-                                    class="font-semibold bg-gradient-to-r from-primary to-secondary text-transparent bg-clip-text">SSL
-                                    certificates.</strong> Anim aute id
-                                magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.</span>
+                            <span>
+                                <strong
+                                    class="font-semibold bg-gradient-to-r from-primary to-secondary text-transparent bg-clip-text">
+                                    Résultats.
+                                </strong>
+                                Mon objectif est avant tout de vous aider à obtenir des résultats concrets et
+                                mesurables.
+                            </span>
                         </li>
                         <li class="flex gap-x-3">
-                            <span><strong
-                                    class="font-semibold bg-gradient-to-r from-primary to-secondary text-transparent bg-clip-text">Database
-                                    backups.</strong> Ac tincidunt
-                                sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.</span>
+                            <span>
+                                <strong
+                                    class="font-semibold bg-gradient-to-r from-primary to-secondary text-transparent bg-clip-text">Conseils.</strong>
+                                Ma mission ne se limite pas à la création de votre site web, je vous conseille pour que
+                                vous puissiez obtenir des résultats sur le long terme.
+                            </span>
                         </li>
                     </ul>
-                    <p class="mt-8">Et vitae blandit facilisi magna lacus commodo. Vitae sapien duis odio id et. Id
-                        blandit molestie auctor fermentum dignissim. Lacus diam tincidunt ac cursus in vel. Mauris
-                        varius vulputate et ultrices hac adipiscing egestas. Iaculis convallis ac tempor et ut. Ac lorem
-                        vel integer orci.</p>
-                    <h2 class="mt-16 text-2xl font-bold tracking-tight text-black dark:text-gray-200">No server? No
-                        problem.</h2>
-                    <p class="mt-6">Id orci tellus laoreet id ac. Dolor, aenean leo, ac etiam consequat in. Convallis
-                        arcu ipsum urna nibh. Pharetra, euismod vitae interdum mauris enim, consequat vulputate nibh.
-                        Maecenas pellentesque id sed tellus mauris, ultrices mauris. Tincidunt enim cursus ridiculus mi.
-                        Pellentesque nam sed nullam sed diam turpis ipsum eu a sed convallis diam.</p>
+                    <h2 class="mt-16 text-2xl font-bold tracking-tight text-black dark:text-gray-200">Prêt à avoir <span
+                            class="bg-gradient-to-r from-primary to-secondary text-transparent bg-clip-text">+ de
+                            clients ?</span></h2>
+                    <div class="mt-10 flex items-center gap-x-6">
+                        <a href="#"
+                            class="relative rounded-full bg-gradient-to-r from-primary to-secondary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:scale-105 transition ease-in-out focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+                            <span class="absolute -top-1 -right-1 flex h-4 w-4">
+                                <span
+                                    class="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
+                                <span
+                                    class="relative inline-flex rounded-full h-4 w-4 text-xs justify-center items-center bg-red-500">1</span>
+                            </span>
+                            PRENDRE RDV
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>

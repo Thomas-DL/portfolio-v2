@@ -36,9 +36,9 @@ class ProjectResource extends Resource
                     ->required()
                     ->placeholder('Sélectionnez un type')
                     ->options([
-                        'landing' => 'Landing Page',
-                        'vitrine' => 'Site vitrine',
-                        'saas' => 'SaaS',
+                        'Landing Page' => 'Landing Page',
+                        'Site vitrine' => 'Site vitrine',
+                        'SaaS' => 'SaaS',
                     ]),
                 TextInput::make('url')
                     ->label('URL')

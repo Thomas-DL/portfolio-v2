@@ -43,21 +43,20 @@
                 @endif
             </div>
             <h1 data-aos="fade-up" data-aos-delay="100"
-                class="mt-10 text-4xl font-bold tracking-tight text-gray-950 dark:text-white sm:text-6xl">Transformons
-                ensemble
+                class="mt-10 text-4xl font-bold tracking-tight text-gray-950 dark:text-white sm:text-6xl">Convertissez
+                vos
                 <span class="bg-gradient-to-r from-primary to-secondary text-transparent bg-clip-text">
-                    vos
-                    idées
+                    leads
                 </span>
-                en expériences web
-                <span
-                    class="bg-gradient-to-r from-primary to-secondary text-transparent bg-clip-text">remarquables</span>
+                en
+                <span class="bg-gradient-to-r from-primary to-secondary text-transparent bg-clip-text">
+                    clients
+                </span>
+                avec votre futur site web
             </h1>
             <p data-aos="fade-up" data-aos-delay="200" class="mt-6 text-lg leading-8 text-gray-950 dark:text-gray-300">
-                Je réalise pour vous
-                des sites vitrines
-                qui captent
-                l'attention et convertissent vos visiteurs en clients fidèles.
+                Faite exploser votre chiffre d'affaire en ligne avec un site web qui convertit vos visiteurs en clients
+                !
             </p>
 
             <livewire:ask-audit />

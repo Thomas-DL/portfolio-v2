@@ -26,12 +26,14 @@
                 </button>
             </div>
             <div class="hidden lg:flex lg:gap-x-12">
-                <a href="#realisations"
+                <a href="{{ route('home') }}#realisations"
                     class="text-sm font-semibold leading-6 text-gray-950 dark:text-gray-50">Réalisations</a>
-                <a href="#processus"
+                <a href="{{ route('home') }}#processus"
                     class="text-sm font-semibold leading-6 text-gray-950 dark:text-gray-50">Processus</a>
-                <a href="#services" class="text-sm font-semibold leading-6 text-gray-950 dark:text-gray-50">Services</a>
-                <a href="#avis" class="text-sm font-semibold leading-6 text-gray-950 dark:text-gray-50">Avis</a>
+                <a href="{{ route('home') }}#services"
+                    class="text-sm font-semibold leading-6 text-gray-950 dark:text-gray-50">Services</a>
+                <a href="{{ route('home') }}#avis"
+                    class="text-sm font-semibold leading-6 text-gray-950 dark:text-gray-50">Avis</a>
                 <a href="{{ route('blog.index') }}"
                     class="text-sm font-semibold leading-6 text-gray-950 dark:text-gray-50">Blog</a>
             </div>
@@ -77,13 +79,13 @@
             <div class="mt-6 flow-root">
                 <div class="-my-6 divide-y divide-gray-500/10">
                     <div class="space-y-2 py-6">
-                        <a href="#realisations"
+                        <a href="{{ route('home') }}#realisations"
                             class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-black dark:text-white hover:bg-gray-50 dark:hover:bg-gray-950">Réalisation</a>
-                        <a href="#processus"
+                        <a href="{{ route('home') }}#processus"
                             class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-black dark:text-white hover:bg-gray-50 dark:hover:bg-gray-950">Processus</a>
-                        <a href="#services"
+                        <a href="{{ route('home') }}#services"
                             class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-black dark:text-white hover:bg-gray-50 dark:hover:bg-gray-950">Services</a>
-                        <a href="#avis"
+                        <a href="{{ route('home') }}#avis"
                             class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-black dark:text-white hover:bg-gray-50 dark:hover:bg-gray-950">Avis</a>
                         <a href="{{ route('blog.index') }}"
                             class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-black dark:text-white hover:bg-gray-50 dark:hover:bg-gray-950">Blog</a>

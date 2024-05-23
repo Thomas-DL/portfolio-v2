@@ -22,14 +22,14 @@
     <div class="relative px-6 py-32 lg:px-8 bg-white dark:bg-gray-950">
         <div class="mx-auto max-w-3xl text-base leading-7 text-gray-700">
             <div class="mb-10 flex items-center justify-between gap-x-2 text-gray-900 dark:text-gray-100">
-                <div class="flex items-center gap-x-2 hover:text-indigo-600 transition">
+                <div class="flex items-center gap-x-2 hover:text-primary transition">
                     <x-heroicon-o-arrow-left class="w-4 h-4" />
                     <a href="{{ route('blog.index') }}" alt="Backlink for return on posts list page"
                         title="{{ __('nody-blog::post.back_to_posts_list') }}">{{ __('nody-blog::post.back_to_posts_list') }}</a>
                 </div>
                 @auth
                     @role('Operator|Admin|Moderator|Writer')
-                        <div class="flex items-center gap-x-2 hover:text-indigo-600 transition">
+                        <div class="flex items-center gap-x-2 hover:text-primary transition">
                             <x-heroicon-o-pencil class="w-4 h-4" />
                             <a href="{{ route('filament.admin.resources.posts.edit', $post->id) }}">
                                 {{ __('nody-blog::post.edit_post') }}
@@ -39,7 +39,9 @@
                 @endauth
             </div>
             <div id="post-content">
-                <p class="text-base font-semibold leading-7 text-indigo-600">{{ $post->category->name }}</p>
+                <p
+                    class="inline text-base font-semibold leading-7 bg-gradient-to-r from-primary to-secondary text-transparent bg-clip-text">
+                    {{ $post->category->name }}</p>
                 <h1 class="mt-2 text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
                     {{ $post->title }}</h1>
                 <div class="flex justify-between">
@@ -102,7 +104,7 @@
                                 <span x-data="copyHandler()" x-on:click="copyUrl"
                                     class="text-gray-700 dark:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-700 group flex items-center px-4 py-2 text-sm cursor-pointer"
                                     role="menuitem" tabindex="-1" id="menu-item-0">
-                                    <x-heroicon-o-link class="mr-3 h-5 w-5 text-gray-400 group-hover:text-indigo-500" />
+                                    <x-heroicon-o-link class="mr-3 h-5 w-5 text-gray-400 group-hover:text-primary" />
                                     {{ __('nody-blog::post.copy_link') }}
                                 </span>
                             </div>
@@ -110,19 +112,19 @@
                                 <a href="https://www.linkedin.com/sharing/share-offsite?mini=true&url={{ htmlentities(URL::current()) }}"
                                     class="text-gray-700 dark:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-700 group flex items-center px-4 py-2 text-sm"
                                     role="menuitem" tabindex="-1" id="menu-item-2">
-                                    <x-fab-linkedin-in class="mr-3 h-5 w-5 text-gray-400 group-hover:text-indigo-500" />
+                                    <x-fab-linkedin-in class="mr-3 h-5 w-5 text-gray-400 group-hover:text-primary" />
                                     {{ __('nody-blog::post.share_on_linkedin') }}
                                 </a>
                                 <a href="https://twitter.com/intent/tweet?text={{ $post->title }}&url={{ URL::current() }}"
                                     class="text-gray-700 dark:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-700 group flex items-center px-4 py-2 text-sm"
                                     role="menuitem" tabindex="-1" id="menu-item-3">
-                                    <x-fab-x-twitter class="mr-3 h-5 w-5 text-gray-400 group-hover:text-indigo-500" />
+                                    <x-fab-x-twitter class="mr-3 h-5 w-5 text-gray-400 group-hover:text-primary" />
                                     {{ __('nody-blog::post.share_on_twitter') }}
                                 </a>
                                 <a href="https://www.facebook.com/sharer/sharer.php?u={{ URL::current() }}&quote={{ $post->title }}"
                                     class="text-gray-700 dark:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-700 group flex items-center px-4 py-2 text-sm"
                                     role="menuitem" tabindex="-1" id="menu-item-3">
-                                    <x-fab-facebook-f class="mr-3 h-5 w-5 text-gray-400 group-hover:text-indigo-500" />
+                                    <x-fab-facebook-f class="mr-3 h-5 w-5 text-gray-400 group-hover:text-primary" />
                                     {{ __('nody-blog::post.share_on_facebook') }}
                                 </a>
                             </div>

@@ -7,7 +7,7 @@ use SebastianBergmann\CodeCoverage\Report\Xml\Project;
 
 // APP ROUTES
 
-Route::view('/', 'welcome');
+Route::view('/', 'welcome')->name('home');
 
 // AUTH ROUTES
 
