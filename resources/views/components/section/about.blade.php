@@ -46,7 +46,8 @@
                         </div>
                         <div class="relative px-6 pt-8 sm:pt-16 md:pr-0">
 
-                            <img src="{{ asset('storage/img/3.png') }}" alt="" class=" w-3/4 h-auto mx-auto">
+                            <img src="{{ asset('storage/assets/memoji.png') }}" alt=""
+                                class=" w-3/4 h-auto mx-auto">
                             <div class="pointer-events-none absolute inset-0 ring-1 ring-inset ring-black/10 md:rounded-3xl"
                                 aria-hidden="true">
 
