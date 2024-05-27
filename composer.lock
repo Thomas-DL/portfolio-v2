@@ -4662,16 +4662,16 @@
         },
         {
             "name": "nody/nody-blog",
-            "version": "1.0.0",
+            "version": "1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Thomas-DL/nody-blog.git",
-                "reference": "7f2d6896fe6f897d23b419d88e139be0021821fb"
+                "reference": "f4a2dd739feb3135bf9d75bdaa4a35652318f04b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Thomas-DL/nody-blog/zipball/7f2d6896fe6f897d23b419d88e139be0021821fb",
-                "reference": "7f2d6896fe6f897d23b419d88e139be0021821fb",
+                "url": "https://api.github.com/repos/Thomas-DL/nody-blog/zipball/f4a2dd739feb3135bf9d75bdaa4a35652318f04b",
+                "reference": "f4a2dd739feb3135bf9d75bdaa4a35652318f04b",
                 "shasum": ""
             },
             "require": {
@@ -4730,7 +4730,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-04-29T23:49:41+00:00"
+            "time": "2024-05-27T12:56:50+00:00"
         },
         {
             "name": "nunomaduro/termwind",
