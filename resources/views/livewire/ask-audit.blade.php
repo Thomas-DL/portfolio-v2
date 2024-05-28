@@ -19,6 +19,7 @@
     </div>
     <x-audit-modal name="ask-audit" :show="$errors->isNotEmpty()" focusable>
         <form wire:submit="askAudit" class="p-6">
+            @csrf
 
             <h2 class="text-2xl font-bold tracking-tight text-gray-950 dark:text-gray-100 sm:text-3xl">Merci de votre
                 <span class="bg-gradient-to-r from-primary to-secondary text-transparent bg-clip-text">

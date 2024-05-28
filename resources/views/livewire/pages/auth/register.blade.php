@@ -50,7 +50,7 @@ new #[Layout('layouts.guest')] class extends Component {
     <div class="mt-10 sm:mx-auto sm:w-full sm:max-w-[480px]">
         <div class="bg-white dark:bg-white/5 px-6 py-12 shadow sm:rounded-lg sm:px-12">
             <form class="space-y-6" wire:submit="register">
-
+                @csrf
                 <!-- Name -->
                 <div>
                     <x-input-label for="name" :value="__('Prénom')" />
