@@ -7,6 +7,7 @@ use Filament\Panel;
 use Filament\Widgets;
 use Filament\PanelProvider;
 use Filament\Pages\Dashboard;
+use Filament\Facades\Filament;
 use Nody\NodyBlog\NodyBlogPlugin;
 use Filament\Support\Colors\Color;
 use App\Filament\Widgets\AuditStats;
@@ -30,6 +31,14 @@ use Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse;
 
 class AdminPanelProvider extends PanelProvider
 {
+
+    public function boot(): void
+    {
+        Filament::serving(function () {
+            Filament::registerViteTheme('resources/css/filament.css');
+        });
+    }
+
     public function panel(Panel $panel): Panel
     {
         return $panel
@@ -88,6 +97,10 @@ class AdminPanelProvider extends PanelProvider
                         ->icon('heroicon-o-chart-bar')
                         ->isActiveWhen(fn (): bool => request()->routeIs('filament.admin.pages.analytics'))
                         ->url(fn (): string => route('filament.admin.pages.analytics')),
+                    NavigationItem::make('Paramètres')
+                        ->icon('heroicon-o-cog-6-tooth')
+                        ->isActiveWhen(fn (): bool => request()->routeIs('filament.admin.pages.settings'))
+                        ->url(fn (): string => route('filament.admin.pages.settings')),
                 ]);
                 $builder->group('Blog', [
                     ...CategoryResource::getNavigationItems(),
