@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>{{ env('APP_NAME') }}</title>
+    <title>{{ $settings->app_name ?? env('APP_NAME') }}</title>
 
     @if (isset($data))
         <meta name="description" content="{{ $data['description'] }}">
@@ -17,7 +17,10 @@
         <meta property="og:image" content="{{ $data['image'] }}">
         <meta property="og:url" content="{{ $data['url'] }}">
         <meta property="og:type" content="website">
-        <meta property="og:site_name" content="{{ env('APP_NAME') }}">
+        <meta property="og:site_name" content="{{ $settings->app_name ?? env('APP_NAME') }}">
+    @else
+        <meta name="description" content="{{ $settings->app_description }}">
+        <meta property="og:url" content="{{ $settings->app_url }}">
     @endif
 
     <!-- Fonts -->
@@ -31,7 +34,6 @@
 
 <body x-data="{ darkMode: localStorage.getItem('darkMode') === 'true' }" :class="darkMode ? 'dark' : ''"
     @dark-mode-updated.window="darkMode = $event.detail.darkMode" class="antialiased font-sans">
-
     @include('layouts.partials.header')
 
     <main>
