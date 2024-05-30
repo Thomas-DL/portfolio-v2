@@ -9,12 +9,14 @@
                     constructing elegant
                     hierarchies.</p>
                 <div class="flex space-x-6">
-                    @foreach (json_decode($settings->social_links) as $link)
-                        <a href="{{ $link->url }}" class="text-black dark:text-gray-500 hover:text-gray-400">
-                            <span class="sr-only">Facebook</span>
-                            @svg($link->network, 'h-6 w-6')
-                        </a>
-                    @endforeach
+                    @if (isset($settings->social_links))
+                        @foreach (json_decode($settings->social_links) as $link)
+                            <a href="{{ $link->url }}" class="text-black dark:text-gray-500 hover:text-gray-400">
+                                <span class="sr-only">Facebook</span>
+                                @svg($link->network, 'h-6 w-6')
+                            </a>
+                        @endforeach
+                    @endif
                 </div>
             </div>
             <div class="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
