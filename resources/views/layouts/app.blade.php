@@ -19,7 +19,7 @@
         <meta property="og:type" content="website">
         <meta property="og:site_name" content="{{ $settings->app_name ?? env('APP_NAME') }}">
     @else
-        <meta name="description" content="{{ $settings->app_description }}">
+        <meta name="description" content="{{ $settings->app_description ?? '' }}">
         <meta property="og:url" content="{{ $settings->app_url }}">
     @endif
 
