@@ -19,10 +19,10 @@
         "spatie/laravel-permission": "^6.7",
         "ta-tikoma/phpunit-architecture-test": "^0.8.4",
         "theseer/tokenizer": "^1.2",
-        "whitecube/laravel-cookie-consent": "^1.2"
+        "whitecube/laravel-cookie-consent": "^1.2",
+        "fakerphp/faker": "^1.23"
     },
     "require-dev": {
-        "fakerphp/faker": "^1.23",
         "laravel/pint": "^1.13",
         "laravel/sail": "^1.26",
         "mockery/mockery": "^1.6",
