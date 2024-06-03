@@ -23,7 +23,11 @@ class UpdateSocialMedia extends Component
     public function loadExistingLinks()
     {
         $setting = Setting::find(1);
-        $this->links = $setting->social_links ? json_decode($setting->social_links, true) : [];
+        if (!empty($setting->social_links)) {
+            $this->links = json_decode($setting->social_links, true);
+        } else {
+            $this->links = [];
+        }
     }
 
     public function __construct()

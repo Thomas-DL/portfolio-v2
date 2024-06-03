@@ -4,8 +4,10 @@ namespace Database\Seeders;
 
 use App\Models\User;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use App\Models\Setting;
 use App\Enums\RolesEnum;
 use Illuminate\Database\Seeder;
+use Database\Seeders\RolesSeeder;
 use Illuminate\Support\Facades\Hash;
 
 class DatabaseSeeder extends Seeder
@@ -22,5 +24,11 @@ class DatabaseSeeder extends Seeder
             'email' => 'contact@thomasdelage.com',
             'password' => Hash::make('password'),
         ])->assignRole(RolesEnum::ADMIN);
+
+        Setting::create([
+            'app_name' => 'My App',
+            'app_url' => 'https://myapp.com',
+            'app_description' => 'My App description',
+        ]);
     }
 }
