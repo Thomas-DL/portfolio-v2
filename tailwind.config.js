@@ -16,7 +16,7 @@ export default {
                 heading: ['degular', 'sans-serif'],
             },
             colors: {
-                primary:   '#FF007A',
+                primary:  '#FF007A',
                 secondary: '#FF7A00',
                 white:     '#F5F5F5',
                 black:     '#1D1D1D',

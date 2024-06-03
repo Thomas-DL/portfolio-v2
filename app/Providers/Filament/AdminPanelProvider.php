@@ -31,7 +31,6 @@ use Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse;
 
 class AdminPanelProvider extends PanelProvider
 {
-
     public function boot(): void
     {
         Filament::serving(function () {
