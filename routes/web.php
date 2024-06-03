@@ -2,12 +2,12 @@
 
 use Illuminate\Support\Str;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\ProjectController;
-use SebastianBergmann\CodeCoverage\Report\Xml\Project;
 
 // APP ROUTES
 
 Route::view('/', 'welcome')->name('home');
+Route::view('/mentions-legales', 'mentions')->name('mentions-legales');
+Route::view('/conditions-generales-utilisation', 'cgu')->name('cgu');
 
 // AUTH ROUTES
 

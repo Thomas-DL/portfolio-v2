@@ -5,9 +5,9 @@
             <div class="space-y-8">
                 <x-application-logo class="h-8 w-auto hidden dark:block" theme="light" />
                 <x-application-logo class="h-8 w-auto block dark:hidden" theme="dark" />
-                <p class="text-sm leading-6 text-black dark:text-gray-300">Making the world a better place through
-                    constructing elegant
-                    hierarchies.</p>
+                <p class="text-sm leading-6 text-black dark:text-gray-300">
+                    Convertissez vos leads en clients avec votre futur site web.
+                </p>
                 <div class="flex space-x-6">
                     @if (isset($settings->social_links))
                         @foreach (json_decode($settings->social_links) as $link)
@@ -19,92 +19,63 @@
                     @endif
                 </div>
             </div>
-            <div class="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
-                <div class="md:grid md:grid-cols-2 md:gap-8">
+            <div class="mt-16 grid grid-cols-1 sm:grid-cols-3 gap-8 xl:col-span-2 xl:mt-0">
+                <div class="md:grid md:grid-cols-1 md:gap-8">
                     <div>
-                        <h3 class="text-sm font-semibold leading-6 text-black dark:text-white">Solutions</h3>
+                        <h3 class="text-sm font-semibold leading-6 text-black dark:text-white">Section</h3>
                         <ul role="list" class="mt-6 space-y-4">
                             <li>
-                                <a href="#"
-                                    class="text-sm leading-6 text-black dark:text-gray-300 hover:text-white">Marketing</a>
+                                <a href="{{ route('home') }}#realisations"
+                                    class="text-sm leading-6 text-gray-950 dark:text-gray-300">Réalisations</a>
                             </li>
                             <li>
-                                <a href="#"
-                                    class="text-sm leading-6 text-black dark:text-gray-300 hover:text-white">Analytics</a>
+                                <a href="{{ route('home') }}#processus"
+                                    class="text-sm leading-6 text-gray-950 dark:text-gray-300">Processus</a>
                             </li>
                             <li>
-                                <a href="#"
-                                    class="text-sm leading-6 text-black dark:text-gray-300 hover:text-white">Commerce</a>
+                                <a href="{{ route('home') }}#services"
+                                    class="text-sm leading-6 text-gray-950 dark:text-gray-300">Services</a>
                             </li>
                             <li>
-                                <a href="#"
-                                    class="text-sm leading-6 text-black dark:text-gray-300 hover:text-white">Insights</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="mt-10 md:mt-0">
-                        <h3 class="text-sm font-semibold leading-6 text-black dark:text-white">Support</h3>
-                        <ul role="list" class="mt-6 space-y-4">
-                            <li>
-                                <a href="#"
-                                    class="text-sm leading-6 text-black dark:text-gray-300 hover:text-white">Pricing</a>
+                                <a href="{{ route('home') }}#avis"
+                                    class="text-sm leading-6 text-gray-950 dark:text-gray-300">Avis</a>
                             </li>
                             <li>
-                                <a href="#"
-                                    class="text-sm leading-6 text-black dark:text-gray-300 hover:text-white">Documentation</a>
-                            </li>
-                            <li>
-                                <a href="#"
-                                    class="text-sm leading-6 text-black dark:text-gray-300 hover:text-white">Guides</a>
-                            </li>
-                            <li>
-                                <a href="#"
-                                    class="text-sm leading-6 text-black dark:text-gray-300 hover:text-white">API
-                                    Status</a>
+                                <a href="{{ route('blog.index') }}"
+                                    class="text-sm leading-6 text-gray-950 dark:text-gray-300">Blog</a>
                             </li>
                         </ul>
                     </div>
                 </div>
-                <div class="md:grid md:grid-cols-2 md:gap-8">
-                    <div>
-                        <h3 class="text-sm font-semibold leading-6 text-black dark:text-white">Company</h3>
+                <div class="md:grid md:grid-cols-1 md:gap-8">
+                    <div class="mt-10 md:mt-0">
+                        <h3 class="text-sm font-semibold leading-6 text-black dark:text-white">Services</h3>
                         <ul role="list" class="mt-6 space-y-4">
                             <li>
-                                <a href="#"
-                                    class="text-sm leading-6 text-black dark:text-gray-300 hover:text-white">About</a>
+                                <a href="{{ $settings->call_url ?? '#' }}"
+                                    class="text-sm leading-6 text-black dark:text-gray-300">Landing
+                                    Page</a>
                             </li>
                             <li>
-                                <a href="#"
-                                    class="text-sm leading-6 text-black dark:text-gray-300 hover:text-white">Blog</a>
-                            </li>
-                            <li>
-                                <a href="#"
-                                    class="text-sm leading-6 text-black dark:text-gray-300 hover:text-white">Jobs</a>
-                            </li>
-                            <li>
-                                <a href="#"
-                                    class="text-sm leading-6 text-black dark:text-gray-300 hover:text-white">Press</a>
-                            </li>
-                            <li>
-                                <a href="#"
-                                    class="text-sm leading-6 text-black dark:text-gray-300 hover:text-white">Partners</a>
+                                <a href="{{ $settings->call_url ?? '#' }}"
+                                    class="text-sm leading-6 text-black dark:text-gray-300">Site
+                                    vitrine</a>
                             </li>
                         </ul>
                     </div>
+                </div>
+                <div class="md:grid md:grid-cols-1 md:gap-8">
                     <div class="mt-10 md:mt-0">
-                        <h3 class="text-sm font-semibold leading-6 text-black dark:text-white">Legal</h3>
+                        <h3 class="text-sm font-semibold leading-6 text-black dark:text-white">À propos</h3>
                         <ul role="list" class="mt-6 space-y-4">
                             <li>
-                                <a href="#"
-                                    class="text-sm leading-6 text-black dark:text-gray-300 hover:text-white">Claim</a>
+                                <a href="{{ route('mentions-legales') }}"
+                                    class="text-sm leading-6 text-black dark:text-gray-300 hover:text-white">Mentions
+                                    légales</a>
                             </li>
                             <li>
-                                <a href="#"
-                                    class="text-sm leading-6 text-black dark:text-gray-300 hover:text-white">Privacy</a>
-                            </li>
-                            <li>
-                                <a href="#"
-                                    class="text-sm leading-6 text-black dark:text-gray-300 hover:text-white">Terms</a>
+                                <a href="{{ route('cgu') }}"
+                                    class="text-sm leading-6 text-black dark:text-gray-300 hover:text-white">CGU</a>
                             </li>
                         </ul>
                     </div>
